@@ -5,11 +5,6 @@
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#14161a"
-    },
     "userInterfaceStyle": "dark",
     "backgroundColor": "#14161a",
     "ios": {
@@ -39,6 +34,14 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#14161a"
+        }
+      ],
       [
         "expo-location",
         {
