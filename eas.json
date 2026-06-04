@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": ">= 20.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "bilalkarkan@icloud.com",
+        "ascAppId": "YOUR_KOMANDONAV_ASC_APP_ID",
+        "ascApiKeyPath": "../bugecebiz-app/AuthKey_Y6JXZ6J54S.p8",
+        "ascApiKeyId": "Y6JXZ6J54S",
+        "ascApiKeyIssuerId": "56bec207-8ef6-4df5-9683-8bb2222b2473"
+      }
+    }
+  }
+}

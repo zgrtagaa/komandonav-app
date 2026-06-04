@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "KomandoNav",
+    "slug": "komandonav-app",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#14161a"
+    },
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#14161a",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.komandonav.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "KomandoNav harita üzerinde konumunuzu göstermek için GPS kullanır.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "KomandoNav harita üzerinde konumunuzu göstermek için GPS kullanır.",
+        "UIStatusBarStyle": "UIStatusBarStyleLightContent",
+        "UIViewControllerBasedStatusBarAppearance": false,
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#14161a"
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET"
+      ],
+      "package": "com.komandonav.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "KomandoNav harita üzerinde konumunuzu göstermek için GPS kullanır."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "387971ba-656a-4673-b3a6-b7f798f9a53c"
+      }
+    },
+    "owner": "zgrtagaa"
+  }
+}

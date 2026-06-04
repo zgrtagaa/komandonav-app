@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#060a06">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KomandoNav">
+<meta name="format-detection" content="telephone=no">
+<title>KomandoNav</title>
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mgrs@1.0.0/dist/mgrs.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  /* VIP Taktik Palet — amber altın ana vurgu */
+  --bg:#0e1012;--s1:#161a1e;--s2:#1c2024;
+  --g1:#2a2e34;--g2:#363c44;--g3:#6b7a52;--gb:#a8b884;
+  --am:#b8882a;--am2:#d4a840;--am3:#f0c860;
+  --rd:#8a3030;--rd2:#b84848;
+  --bl:#304a68;--bl2:#4878a8;
+  --tx:#ccd0ca;--mu:#606870;--dim:#1e2228;
+  --f1:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --f2:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --fm:'SF Mono','Roboto Mono','Courier New',monospace;
+  --th-base:50px;--bh-base:62px;--pw:min(340px,100vw);
+  --sat:env(safe-area-inset-top,0px);
+  --sab:env(safe-area-inset-bottom,0px);
+  --th:calc(var(--th-base) + var(--sat));
+  --bh:calc(var(--bh-base) + var(--sab));
+  --bar-bg:#080a0c;
+  --bar-border:#1e2228;
+  --coord-color:#d4a840;
+  --active-color:#d4a840;
+  /* Cam efekti */
+  --glass-bg:rgba(8,10,12,.88);
+  --glass-border:rgba(212,168,64,.15);
+}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-family:var(--f1);touch-action:manipulation;-webkit-text-size-adjust:100%;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+/* scanline kaldırıldı — daha profesyonel görünüm */
+
+/* ── EVRENSEL DOKUNMA GERİ BİLDİRİMİ ─── */
+.tb:active,.gbtn:active,.dbtn:active,.sbtn:active,.pbtn:active,
+.tool-btn:active,.li:active,.wi:active,.msb:active,.ai:active,
+#fab-menu:active,#fab-locate:active,.ptab:active{
+  opacity:.65;transform:scale(.96);
+  transition:transform .08s,opacity .08s;
+}
+input,textarea,select{-webkit-user-select:text!important;user-select:text!important}
+
+/* ── MAP ─────────────────── */
+#map{position:fixed;inset:0;z-index:1}
+.leaflet-control-zoom,.leaflet-control-attribution{display:none!important}
+.leaflet-tile-pane{filter:saturate(.55) brightness(.78) contrast(1.12) hue-rotate(8deg)}
+#map.night .leaflet-tile-pane{filter:saturate(0) brightness(.35) sepia(1) hue-rotate(300deg) brightness(.65)!important}
+
+/* ── TAKTİK OVERLAY'LER ──── */
+/* Vignette — kenar karartma */
+#vignette{
+  position:fixed;inset:0;z-index:2;pointer-events:none;
+  background:radial-gradient(ellipse at center,
+    transparent 52%,
+    rgba(0,0,0,.25) 75%,
+    rgba(0,0,0,.65) 100%);
+}
+/* Köşe köşebentleri — targeting brackets */
+#corners{position:fixed;inset:0;z-index:3;pointer-events:none;}
+.corner{position:absolute;width:22px;height:22px;}
+.corner::before,.corner::after{content:'';position:absolute;background:rgba(168,184,132,.55);}
+.corner::before{width:100%;height:2px;}
+.corner::after{width:2px;height:100%;}
+.corner.tl{top:calc(var(--th) + 10px);left:10px;}
+.corner.tl::before{top:0;left:0;}
+.corner.tl::after{top:0;left:0;}
+.corner.tr{top:calc(var(--th) + 10px);right:10px;}
+.corner.tr::before{top:0;right:0;}
+.corner.tr::after{top:0;right:0;}
+.corner.bl{bottom:calc(var(--bh) + 10px);left:10px;}
+.corner.bl::before{bottom:0;left:0;}
+.corner.bl::after{bottom:0;left:0;}
+.corner.br{bottom:calc(var(--bh) + 10px);right:10px;}
+.corner.br::before{bottom:0;right:0;}
+.corner.br::after{bottom:0;right:0;}
+/* Merkez crosshair */
+#crosshair{
+  position:fixed;top:50%;left:50%;z-index:3;pointer-events:none;
+  transform:translate(-50%,-50%);
+}
+#crosshair::before,#crosshair::after{content:'';position:absolute;background:rgba(168,184,132,.5);}
+#crosshair::before{width:14px;height:1.5px;top:50%;left:50%;transform:translate(-50%,-50%);}
+#crosshair::after{width:1.5px;height:14px;top:50%;left:50%;transform:translate(-50%,-50%);}
+.ch-dot{width:3px;height:3px;border-radius:50%;background:rgba(168,184,132,.7);
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+/* Scan line — çok ince yatay çizgiler HUD bölgelerine */
+#toolbar::after,#bot::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.08) 3px,rgba(0,0,0,.08) 4px);
+  z-index:1;
+}
+
+/* ── TOOLBAR — TAKTİK HUD ─── */
+/* Safe area için tam siyah arka plan garantisi */
+body::before{
+  content:'';position:fixed;top:0;left:0;right:0;
+  height:var(--sat);background:#080a0c;z-index:201;
+}
+#toolbar{
+  position:fixed;top:0;left:0;right:0;height:var(--th);
+  background:#080a0c;
+  border-bottom:1px solid rgba(212,168,64,.12);
+  box-shadow:0 1px 0 rgba(212,168,64,.06),0 2px 20px rgba(0,0,0,.9);
+  z-index:200;display:flex;align-items:stretch;
+  padding-top:var(--sat);
+  padding-left:env(safe-area-inset-left,0px);
+  padding-right:env(safe-area-inset-right,0px);
+  overflow:hidden;
+  position:relative;
+}
+/* Gizli uyumluluk butonları — JS class değişimi için */
+.tb{display:none!important}
+.tb.on{display:none!important}
+.tb-sp{display:none}
+
+/* Menü butonu — toolbar içinde, sol */
+#fab-menu{
+  width:48px;flex-shrink:0;
+  background:transparent;border:none;border-right:1px solid var(--bar-border);
+  color:#606860;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  touch-action:manipulation;transition:background .12s,color .12s;
+  position:relative;z-index:1;
+}
+#fab-menu:active{background:rgba(160,184,132,.1);color:var(--active-color)}
+#fab-menu svg{pointer-events:none}
+
+/* GPS bölümü — sol */
+#gps-s{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:0 10px;border-right:1px solid var(--bar-border);
+  flex-shrink:0;cursor:pointer;min-width:52px;touch-action:manipulation;
+}
+#gps-s:active{background:rgba(160,184,132,.08)}
+.led{width:8px;height:8px;border-radius:50%;background:#3a4230;flex-shrink:0}
+.led.on{background:#6aaa40;box-shadow:0 0 6px #4a8020;animation:bl 2s infinite}
+.led.srch{background:var(--am2);animation:bl .7s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+#gps-txt{font-family:var(--fm);font-size:.46rem;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:#4a5440;line-height:1;text-align:center}
+#gps-txt.on{color:#6aaa40}
+#gps-txt.srch{color:var(--am2)}
+
+/* KOORDİNAT — merkez, hero element */
+#tb-coord{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:0 8px;cursor:pointer;touch-action:manipulation;
+  min-width:0;overflow:hidden;
+}
+#tb-coord:active{background:rgba(160,184,132,.06)}
+#tb-mgrs-val{
+  font-family:var(--fm);font-size:.95rem;font-weight:700;
+  color:var(--am3);letter-spacing:2.5px;line-height:1;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  max-width:100%;
+  text-shadow:0 0 14px rgba(212,168,64,.6),0 0 32px rgba(180,130,40,.3);
+}
+#tb-latlon-row{
+  display:flex;align-items:center;gap:4px;
+  font-family:var(--fm);font-size:.5rem;color:#485240;letter-spacing:.5px;
+}
+#tb-latlon-row span.sep{color:#2a3020}
+
+/* Aktif mod etiketi */
+#tb-mode-tag{
+  display:none;align-items:center;padding:0 8px;
+  font-family:var(--f2);font-size:.6rem;font-weight:700;letter-spacing:2px;
+  color:var(--am2);border-left:2px solid var(--am);white-space:nowrap;
+}
+#tb-mode-tag.on{display:flex}
+
+/* Sağ cluster — zoom + saat */
+#tb-right{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:3px;padding:0 12px;border-left:1px solid var(--bar-border);flex-shrink:0;
+}
+.tb-zoom{
+  font-family:var(--fm);font-size:.58rem;font-weight:700;letter-spacing:1px;
+  color:#4a5440;white-space:nowrap;
+}
+.tb-zoom span{color:#6a7a60}
+.tb-clock{
+  font-family:var(--fm);font-size:.64rem;font-weight:700;letter-spacing:1.5px;
+  color:#6a7a60;white-space:nowrap;
+}
+
+/* Gizli elementler — JS tarafından güncellenir */
+#c-lat,#c-lon{display:none}
+#mgrs-d{display:none}
+
+/* ── BOTTOM DOCK ─────────── */
+#bot{
+  position:fixed;bottom:0;left:0;right:0;
+  height:var(--bh);
+  background:linear-gradient(0deg,#0a0d0a 0%,#060906 100%);
+  border-top:1px solid #1e2a1a;
+  box-shadow:0 -1px 0 rgba(168,184,132,.07),0 -4px 20px rgba(0,0,0,.7);
+  z-index:100;display:flex;align-items:stretch;
+  padding-bottom:var(--sab);
+  padding-left:env(safe-area-inset-left,0px);
+  padding-right:env(safe-area-inset-right,0px);
+}
+.dock-btn{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:5px;background:transparent;border:none;border-right:1px solid rgba(255,255,255,.04);
+  color:#404850;cursor:pointer;touch-action:manipulation;
+  transition:all .15s;padding:4px 2px;
+  font-family:var(--fm);position:relative;
+}
+.dock-btn:last-child{border-right:none}
+.dock-btn:active{background:rgba(212,168,64,.08);color:var(--am2)}
+.dock-btn.active{color:var(--am2);}
+.dock-btn.active::after{
+  content:'';position:absolute;top:0;left:20%;right:20%;height:2px;
+  background:linear-gradient(90deg,transparent,var(--am2),transparent);
+  border-radius:0 0 2px 2px;
+}
+.dock-btn span{font-size:.48rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;line-height:1}
+.dock-btn svg{flex-shrink:0}
+.dock-locate{color:#6a5020}
+.dock-locate:active{background:rgba(212,168,64,.1);color:var(--am2)}
+.dock-locate.active{color:var(--am2)}
+
+/* Scale bar gizli elementler — JS için DOM'da kalır */
+.scalebar{display:none}
+.scaleline,.scalelbl{display:none}
+.cd,.cd-latlon,.cd-zoom{display:none}
+
+
+/* ── PANEL BACKDROP ──────── */
+#pbd{position:fixed;inset:0;z-index:149;background:rgba(0,0,0,.6);display:none;touch-action:manipulation}
+#pbd.on{display:block}
+
+/* ── PANEL ───────────────── */
+#panel{
+  position:fixed;top:var(--th);left:0;bottom:var(--bh);
+  width:var(--pw);z-index:150;
+  background:rgba(10,12,14,.96);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;
+  transform:translateX(-100%);
+  transition:transform .25s cubic-bezier(.4,0,.2,1);
+  padding-left:env(safe-area-inset-left,0px);
+  border-right:1px solid rgba(212,168,64,.12);
+  box-shadow:4px 0 40px rgba(0,0,0,.8),1px 0 0 rgba(212,168,64,.06);
+  overflow:hidden;
+}
+#panel.on{transform:translateX(0)}
+
+/* Panel başlık satırı */
+.ph{
+  display:flex;align-items:center;
+  background:rgba(8,10,12,.8);
+  border-bottom:1px solid rgba(212,168,64,.12);
+  flex-shrink:0;height:50px;
+}
+.ph-title{
+  flex:1;font-family:var(--fm);font-size:.72rem;font-weight:700;
+  letter-spacing:4px;text-transform:uppercase;
+  color:rgba(212,168,64,.7);
+  padding-left:16px;
+}
+#btn-close-panel{
+  width:50px;height:50px;background:transparent;border:none;
+  color:#404850;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:1rem;touch-action:manipulation;transition:color .15s,background .15s;
+}
+#btn-close-panel:active{color:var(--rd2);background:rgba(180,60,60,.12)}
+
+/* Sekmeler */
+.ptabs{
+  display:flex;border-bottom:1px solid rgba(212,168,64,.1);
+  flex-shrink:0;overflow-x:auto;-webkit-overflow-scrolling:touch;
+  background:rgba(6,8,10,.6);
+}
+.ptabs::-webkit-scrollbar{display:none}
+.ptab{
+  flex:none;
+  padding:12px 10px;
+  background:transparent;border:none;color:#404850;
+  font-family:var(--fm);font-size:.56rem;font-weight:700;
+  letter-spacing:.8px;text-transform:uppercase;cursor:pointer;
+  border-bottom:2px solid transparent;transition:all .15s;
+  white-space:nowrap;touch-action:manipulation;text-align:center;
+}
+.ptab.on{color:var(--am2);border-bottom-color:var(--am2);background:rgba(212,168,64,.05)}
+
+/* Panel içerik kaydırma */
+.pc{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;background:#09100a}
+.pc::-webkit-scrollbar{width:2px}
+.pc::-webkit-scrollbar-thumb{background:#1e2a1e}
+.tp{display:none;padding:14px 12px}
+.tp.on{display:block}
+
+/* Bölüm başlıkları — VIP */
+.sl{
+  font-size:.52rem;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(212,168,64,.45);margin:20px 0 10px;padding:0 2px 6px;font-weight:700;
+  font-family:var(--fm);
+  border-bottom:1px solid rgba(212,168,64,.1);
+  display:flex;align-items:center;gap:8px;
+}
+.sl::before{
+  content:'';display:inline-block;width:3px;height:10px;
+  background:rgba(212,168,64,.5);border-radius:1px;flex-shrink:0;
+}
+
+/* Katman listesi */
+.li{
+  display:flex;align-items:center;gap:10px;padding:11px 8px;
+  cursor:pointer;border:1px solid transparent;border-radius:3px;
+  margin-bottom:3px;touch-action:manipulation;transition:background .1s;
+}
+.li:active{background:rgba(60,100,50,.1)}
+.li.on{background:rgba(60,100,50,.08);border-color:#1e2c1a}
+.li-ico{
+  width:32px;height:32px;flex-shrink:0;border-radius:3px;
+  background:#0d1510;border:1px solid #1a2418;
+  display:flex;align-items:center;justify-content:center;color:#3d5a30;
+}
+.li-n{font-family:var(--f2);font-size:.82rem;font-weight:700;color:#8aa880}
+.li-d{font-size:.64rem;color:#3d4838;margin-top:2px}
+.tog{
+  width:36px;height:20px;background:#161e14;border:1px solid #1e2c1a;
+  border-radius:10px;position:relative;flex-shrink:0;transition:background .2s;
+}
+.tog::after{
+  content:'';position:absolute;width:14px;height:14px;background:#2e3a2e;
+  border-radius:50%;top:2px;left:2px;transition:all .2s;
+}
+.li.on .tog{background:#1e3a18;border-color:#3a5a2a}
+.li.on .tog::after{background:var(--gb);left:18px;box-shadow:0 0 4px rgba(100,160,80,.4)}
+input[type=range]{-webkit-appearance:none;height:2px;background:var(--g1);outline:none;flex:1}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--gb);cursor:pointer}
+.oprow{display:flex;align-items:center;gap:6px;padding:2px 6px 6px}
+.oplbl{font-size:.56rem;color:var(--mu);min-width:28px}
+
+/* WP items */
+.wi{display:flex;align-items:center;gap:8px;padding:9px 8px;border:1px solid var(--g1);border-radius:5px;margin-bottom:4px;cursor:pointer;touch-action:manipulation}
+.wi:active{background:rgba(74,128,64,.08)}
+.wc{width:10px;height:10px;flex-shrink:0}
+.wi-info{flex:1;min-width:0}
+.wn{font-family:var(--f2);font-size:.82rem;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wco{font-size:.56rem;color:var(--mu)}
+.ic{background:transparent;border:none;color:var(--mu);cursor:pointer;padding:4px 6px;font-size:.82rem;flex-shrink:0;min-width:30px;min-height:30px;display:flex;align-items:center;justify-content:center;touch-action:manipulation}
+.ic:hover,.ic:active{color:var(--am2)}
+.ic.del:hover,.ic.del:active{color:var(--rd2)}
+
+/* Mil */
+.mcbar{display:flex;gap:3px;margin-bottom:8px}
+.mcb{flex:1;padding:6px 2px;border:1px solid transparent;font-family:var(--f2);font-size:.6rem;font-weight:700;text-align:center;cursor:pointer;transition:all .1s;touch-action:manipulation}
+.mcb-bl{border-color:var(--bl2);color:var(--bl2)}.mcb-rd{border-color:var(--rd2);color:var(--rd2)}
+.mcb-gn{border-color:var(--g2);color:var(--g3)}.mcb-yw{border-color:var(--am);color:var(--am2)}
+.mcb:not(.on){opacity:.4}.mcb.on{opacity:1}
+.mc-title{font-family:var(--f2);font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--am);margin:8px 0 4px;border-bottom:1px solid rgba(200,144,10,.2);padding-bottom:2px}
+.mg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:4px}
+.msb{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;background:var(--s2);border:1px solid var(--g1);cursor:pointer;touch-action:manipulation}
+.msb:active,.msb.on{border-color:var(--gb);background:rgba(74,128,64,.1)}
+.msb-svg{width:44px;height:28px;display:flex;align-items:center;justify-content:center}
+.msb-lbl{font-family:var(--f2);font-size:.46rem;color:var(--mu);text-align:center;line-height:1.2}
+.szrow{display:flex;align-items:center;gap:8px;padding:4px 0;margin-bottom:6px}
+.szrow label{font-size:.56rem;color:var(--mu);letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+.szv{font-size:.6rem;color:var(--gb);min-width:32px;text-align:right}
+.mpi{display:flex;align-items:center;gap:6px;padding:8px;border:1px solid var(--g1);border-radius:5px;margin-bottom:3px;cursor:pointer;touch-action:manipulation}
+.mpin{font-family:var(--f2);font-size:.72rem;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mpic{font-size:.54rem;color:var(--mu)}
+
+/* Area */
+.ai{display:flex;align-items:center;gap:8px;padding:9px 8px;border:1px solid var(--g1);border-radius:5px;margin-bottom:4px;cursor:pointer;touch-action:manipulation}
+.ai.on{border-color:var(--g3);background:rgba(74,128,64,.08)}
+.ac{width:10px;height:10px;flex-shrink:0}
+.ai-info{flex:1}.ai-n{font-family:var(--f2);font-size:.8rem;font-weight:700}.ai-d{font-size:.58rem;color:var(--mu)}
+
+/* Stats */
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px}
+.sb{background:var(--s2);border:1px solid var(--g1);border-radius:6px;padding:10px}
+.sv{font-family:var(--fm);font-size:1rem;color:var(--gb)}.sk{font-family:var(--f2);font-size:.62rem;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-top:1px}
+#prof-c{width:100%;height:52px;background:var(--s2);border:1px solid var(--g1);display:block}
+
+/* Girdi alanları */
+.gi{
+  width:100%;background:#0d1510;border:1px solid #1e2c1e;border-radius:4px;
+  padding:12px 13px;color:var(--tx);font-family:var(--fm);font-size:16px;
+  outline:none;margin-bottom:8px;transition:border-color .15s;
+  letter-spacing:.5px;
+}
+.gi:focus{border-color:var(--g3);background:#0f1a10}
+.gi::placeholder{color:#2e3a2e;letter-spacing:0;font-family:var(--f1)}
+
+/* Panel butonları */
+.gbtn{
+  padding:12px 14px;
+  background:linear-gradient(135deg,rgba(20,24,28,.9) 0%,rgba(14,16,20,.9) 100%);
+  border:1px solid rgba(212,168,64,.18);border-radius:5px;
+  color:rgba(212,168,64,.7);font-family:var(--fm);font-size:.66rem;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;cursor:pointer;
+  transition:all .15s;touch-action:manipulation;
+  display:inline-flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.03);
+}
+.gbtn:active{
+  background:linear-gradient(135deg,rgba(212,168,64,.12) 0%,rgba(180,130,40,.08) 100%);
+  border-color:rgba(212,168,64,.4);color:var(--am3);
+  box-shadow:0 0 12px rgba(212,168,64,.15);
+}
+.gbtn.full{width:100%;margin-bottom:6px}
+
+/* Küçük şehir butonları */
+.pbtn{
+  padding:8px 12px;background:transparent;border:1px solid #1a2418;
+  color:#3d4a38;font-family:var(--f2);font-size:.6rem;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;cursor:pointer;margin:2px;
+  touch-action:manipulation;border-radius:2px;transition:all .1s;
+}
+.pbtn:active{border-color:var(--g3);color:var(--gb);background:#0f1a10}
+.pgrid{display:flex;flex-wrap:wrap}
+.sres{padding:8px 6px;border:1px solid var(--g1);margin-bottom:3px;cursor:pointer;touch-action:manipulation}
+.sres:active{background:rgba(74,128,64,.08)}
+.sr-n{font-family:var(--f2);font-size:.78rem;font-weight:700}.sr-c{font-size:.56rem;color:var(--mu)}
+
+/* Import */
+.impz{border:1px dashed var(--g2);border-radius:6px;padding:20px;text-align:center;cursor:pointer;margin-bottom:8px;touch-action:manipulation}
+.impz:active,.impz.over{border-color:var(--g3)}.impz-ico{font-size:1.6rem;margin-bottom:5px}
+.impz-t{font-family:var(--f2);font-size:.78rem;color:var(--mu);letter-spacing:1px}
+#imp-file{display:none}
+#cimp{width:100%;background:var(--s2);border:1px solid var(--g1);padding:8px;color:var(--tx);font-family:var(--f1);font-size:16px;outline:none;resize:vertical;margin-bottom:5px}
+#cimp::placeholder{color:var(--mu)}
+
+/* ── RIGHT SIDEBAR (FAB zone) ─── */
+#sidebar{
+  position:fixed;right:env(safe-area-inset-right,0px);bottom:calc(var(--bh) + 62px);
+  display:flex;flex-direction:column;gap:3px;padding:0 6px;z-index:100;
+}
+.sbtn{
+  width:40px;height:40px;border-radius:8px;
+  background:rgba(10,12,16,.92);
+  border:1px solid rgba(255,255,255,.06);
+  color:#404850;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all .15s;position:relative;touch-action:manipulation;
+  box-shadow:0 2px 8px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.04);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.sbtn:active,.sbtn.on{
+  background:rgba(212,168,64,.1);
+  border-color:rgba(212,168,64,.3);color:var(--am2);
+  box-shadow:0 2px 12px rgba(212,168,64,.15);
+}
+.sbtn.night-on{border-color:var(--rd2)!important;color:var(--rd2)!important}
+.sbtn .tt{
+  position:absolute;right:calc(100% + 4px);top:50%;transform:translateY(-50%);
+  background:rgba(6,10,6,.98);border:1px solid var(--g1);padding:3px 7px;
+  font-family:var(--f2);font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .1s;
+}
+.sbtn:hover .tt{opacity:1}
+.ssep{height:1px;background:var(--g1);margin:1px 0}
+/* Locate FAB */
+#fab-locate{
+  position:fixed;right:max(10px,env(safe-area-inset-right,0px));bottom:calc(var(--bh) + 8px);
+  width:52px;height:52px;
+  background:var(--g3);border:2px solid var(--gb);
+  color:#060a06;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  z-index:100;touch-action:manipulation;transition:all .1s;border-radius:2px;
+  box-shadow:0 1px 3px rgba(0,0,0,.4);
+}
+#fab-locate:hover,.fab-locate:active{background:var(--gb)}
+
+/* ── MODE BAR ────────────── */
+#mbar{
+  position:fixed;top:calc(var(--th) + 2px);left:50%;transform:translateX(-50%);
+  background:rgba(6,10,6,.98);border:1px solid var(--am);
+  padding:4px 14px;font-family:var(--f2);font-size:.7rem;font-weight:700;
+  letter-spacing:2px;color:var(--am2);z-index:101;display:none;white-space:nowrap;
+  max-width:calc(100vw - 20px);overflow:hidden;text-overflow:ellipsis;
+}
+#mbar.on{display:block}
+
+/* North arrow */
+#north{position:fixed;top:calc(var(--th)+8px);right:56px;z-index:91;pointer-events:none}
+/* Panel açıkken yüzen öğeleri gizle — birbirine girmesin */
+body.panel-open #xhair-btn,
+body.panel-open #m-info,
+body.panel-open #b-info,
+body.panel-open #a-info,
+body.panel-open #r-info,
+body.panel-open #draw-bar,
+body.panel-open #fab-menu,
+body.panel-open #sidebar,
+body.panel-open #fab-locate,
+body.panel-open #mbar,
+body.panel-open #north{display:none!important}
+
+/* Crosshair */
+#xhair{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:50;pointer-events:none;opacity:0;transition:opacity .15s}
+#xhair.on{opacity:.85}
+
+/* ── FLOAT INFO BARS ─────── */
+.fbar{
+  position:fixed;bottom:calc(var(--bh) + 8px);left:12px;right:12px;
+  background:rgba(4,6,4,.98);border:1px solid var(--am);border-radius:4px;
+  padding:0;font-size:.72rem;color:var(--am2);z-index:600;
+  display:none;flex-direction:row;align-items:stretch;
+  box-shadow:0 4px 20px rgba(0,0,0,.7);
+  pointer-events:all;overflow:hidden;
+}
+.fbar.on{display:flex}
+.fbar.blue{border-color:var(--bl2);color:#9cbfd8}
+/* Sol bilgi alanı */
+.fbar-info{flex:1;display:flex;align-items:center;gap:8px;padding:10px 14px;min-width:0;overflow:hidden}
+.fbar-info strong{font-size:.88rem;white-space:nowrap}
+.fbar-tag{font-family:var(--f2);font-size:.58rem;font-weight:700;letter-spacing:2px;opacity:.6;white-space:nowrap}
+.fbar-sub{font-size:.6rem;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Sağ butonlar — her zaman görünür */
+.fbar-actions{display:flex;align-items:stretch;flex-shrink:0;border-left:1px solid rgba(200,144,10,.3)}
+.fbar-btn{background:transparent;border:none;border-left:1px solid rgba(200,144,10,.15);
+  color:inherit;cursor:pointer;padding:0 16px;font-family:var(--f2);font-size:.7rem;
+  font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  touch-action:manipulation;min-width:60px;display:flex;align-items:center;justify-content:center}
+.fbar-btn:active{background:rgba(200,144,10,.2)}
+.fbar-btn.save{color:var(--gb)}
+.fbar-btn.cancel{color:var(--mu);font-size:1rem;min-width:44px}
+.fbar-x{background:transparent;border:none;border-left:1px solid rgba(200,144,10,.15);
+  color:var(--mu);cursor:pointer;padding:0 14px;font-size:1.1rem;
+  touch-action:manipulation;display:flex;align-items:center;justify-content:center;min-width:44px}
+.fbar-x:active{background:rgba(200,0,0,.15);color:var(--rd2)}
+
+/* ── DIALOGS ─────────────── */
+.do{
+  position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:500;
+  display:none;align-items:flex-end;justify-content:center;
+  padding:0 0 var(--sab);
+}
+.do.on{display:flex}
+.db{
+  background:#0b1309;border:1px solid #1e2c1a;
+  border-radius:12px 12px 0 0;padding:22px 20px 28px;
+  width:100%;max-width:460px;
+}
+.db.am{border-color:rgba(192,138,46,.5)}
+.db.rd{border-color:rgba(180,60,60,.4)}
+.dtit{
+  font-family:var(--f2);font-size:.7rem;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;color:#5a7050;margin-bottom:16px;
+  padding-bottom:10px;border-bottom:1px solid #1a2418;
+}
+.dtit.am{color:var(--am2)}
+.dtit.rd{color:var(--rd2)}
+.dlbl{
+  font-size:.56rem;letter-spacing:2px;text-transform:uppercase;
+  color:#3a4838;margin:12px 0 5px;
+}
+.di{
+  width:100%;background:#0d1510;border:1px solid #1e2c1e;border-radius:4px;
+  padding:13px 14px;color:var(--tx);font-family:var(--fm);font-size:16px;
+  outline:none;transition:border-color .15s;letter-spacing:.5px;
+}
+.di:focus{border-color:var(--g3)}
+.crow{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.co{width:28px;height:28px;border:2px solid transparent;border-radius:3px;cursor:pointer;flex-shrink:0;touch-action:manipulation}
+.co.on{border-color:#fff;box-shadow:0 0 6px rgba(255,255,255,.3)}
+.dbtns{display:flex;gap:8px;margin-top:18px}
+.dbtn{
+  flex:1;padding:14px 6px;background:transparent;border:1px solid #1e2c1e;
+  border-radius:4px;color:#7a9870;font-family:var(--f2);font-size:.72rem;
+  font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;transition:all .12s;touch-action:manipulation;
+  display:flex;align-items:center;justify-content:center;
+}
+.dbtn:active{background:#162018;border-color:var(--g3);color:var(--gb)}
+.dbtn.s{border-color:#161e14;color:#2e3a2e}
+.dbtn.s:active{border-color:#3d4838;color:#6a7860}
+.dbtn.am{border-color:rgba(192,138,46,.4);color:var(--am2)}
+.dbtn.am:active{background:rgba(192,138,46,.12)}
+.dbtn.rd{border-color:rgba(180,60,60,.4);color:var(--rd2)}
+.dbtn.rd:active{background:rgba(180,60,60,.12)}
+
+/* ── NOTIFICATION ────────── */
+#notif{
+  position:fixed;top:calc(var(--th) + 10px);left:50%;
+  transform:translateX(-50%) translateY(-12px);
+  background:rgba(12,14,16,.94);
+  border:1px solid rgba(212,168,64,.35);
+  border-radius:6px;
+  padding:10px 20px 10px 16px;
+  font-family:var(--fm);font-size:.66rem;
+  font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  color:var(--am3);
+  z-index:700;opacity:0;pointer-events:none;
+  transition:opacity .22s ease,transform .22s cubic-bezier(.34,1.4,.64,1);
+  white-space:nowrap;max-width:calc(100vw - 24px);overflow:hidden;text-overflow:ellipsis;
+  box-shadow:0 4px 24px rgba(0,0,0,.7),0 0 0 1px rgba(212,168,64,.08),inset 0 1px 0 rgba(255,255,255,.04);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+#notif::before{
+  content:'▶';margin-right:8px;font-size:.5rem;
+  color:rgba(212,168,64,.6);vertical-align:middle;
+}
+#notif.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.pop-btn{background:var(--dim);border:1px solid var(--g3);color:var(--gb);font-family:'Arial Narrow',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;padding:4px 8px;margin:2px;touch-action:manipulation}
+.pop-btn.rd{border-color:var(--rd2);color:var(--rd2)}
+.nato-pop .leaflet-popup-content-wrapper{background:rgba(6,10,6,.96);border:1px solid var(--g1);border-radius:0;color:var(--tx)}
+.nato-pop .leaflet-popup-tip{background:rgba(6,10,6,.96)}
+.nato-pop .leaflet-popup-content{margin:10px 12px;font-family:Courier New,monospace;font-size:11px}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:4px}
+.tool-btn{
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:18px 6px;
+  background:linear-gradient(145deg,rgba(18,22,26,.95) 0%,rgba(12,14,18,.95) 100%);
+  border:1px solid rgba(255,255,255,.05);border-radius:8px;
+  color:#404850;cursor:pointer;transition:all .18s;touch-action:manipulation;
+  min-height:72px;
+  box-shadow:0 2px 6px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.03);
+}
+.tool-btn:active{
+  border-color:rgba(212,168,64,.3);
+  background:linear-gradient(145deg,rgba(212,168,64,.08) 0%,rgba(180,130,40,.05) 100%);
+  color:var(--am2);transform:scale(.97);
+}
+.tool-btn.on{
+  border-color:rgba(212,168,64,.4);
+  background:linear-gradient(145deg,rgba(212,168,64,.1) 0%,rgba(180,130,40,.06) 100%);
+  color:var(--am2);
+  box-shadow:0 2px 12px rgba(212,168,64,.12),inset 0 1px 0 rgba(255,255,255,.04);
+}
+.tool-ico{display:flex;align-items:center;justify-content:center;color:#3a424a}
+.tool-btn:active .tool-ico,.tool-btn.on .tool-ico{color:var(--am2)}
+.tool-lbl{font-family:var(--fm);font-size:.6rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.empty-s{text-align:center;padding:20px 10px;color:var(--mu)}
+.empty-t{font-family:var(--f2);font-size:.75rem;letter-spacing:1px}
+.rec{width:7px;height:7px;background:var(--rd2);display:inline-block;animation:bl .8s infinite}
+
+/* ── ACTİON GRUP BUTONLARI — VIP Liste ── */
+.act-group{
+  display:flex;flex-direction:column;
+  border:1px solid rgba(212,168,64,.1);border-radius:10px;
+  overflow:hidden;margin-bottom:6px;
+}
+.act-btn{
+  display:flex;align-items:center;gap:12px;
+  padding:13px 14px;
+  background:rgba(14,16,20,.8);
+  border:none;border-bottom:1px solid rgba(255,255,255,.04);
+  color:var(--tx);cursor:pointer;touch-action:manipulation;
+  transition:background .15s;text-align:left;width:100%;
+}
+.act-btn:last-child{border-bottom:none;}
+.act-btn:active{background:rgba(212,168,64,.08);}
+.act-ico{
+  width:36px;height:36px;flex-shrink:0;border-radius:8px;
+  background:rgba(212,168,64,.08);border:1px solid rgba(212,168,64,.15);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(212,168,64,.7);
+}
+.act-text{display:flex;flex-direction:column;flex:1;min-width:0;gap:2px;}
+.act-title{font-family:var(--fm);font-size:.66rem;font-weight:700;letter-spacing:1.5px;color:var(--tx);}
+.act-sub{font-size:.56rem;color:rgba(255,255,255,.25);letter-spacing:.3px;}
+.act-arrow{font-size:1rem;color:rgba(212,168,64,.25);flex-shrink:0;}
+
+/* ── BOOT EKRANI ─── */
+#boot{
+  position:fixed;inset:0;z-index:9999;
+  background:#080a0c;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:16px;
+  transition:opacity .6s ease;
+}
+#boot.fade{opacity:0;pointer-events:none;}
+.boot-logo{
+  font-family:var(--fm);font-size:1.4rem;font-weight:700;
+  letter-spacing:8px;color:var(--am2);
+  text-shadow:0 0 20px rgba(212,168,64,.5);
+}
+.boot-sub{
+  font-family:var(--fm);font-size:.55rem;letter-spacing:4px;
+  color:rgba(212,168,64,.4);text-transform:uppercase;
+}
+.boot-bar{
+  width:160px;height:2px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden;
+  margin-top:8px;
+}
+.boot-prog{
+  height:100%;width:0%;background:linear-gradient(90deg,var(--am),var(--am3));
+  border-radius:2px;
+  animation:bootprog .9s cubic-bezier(.4,0,.2,1) .2s forwards;
+}
+@keyframes bootprog{to{width:100%}}
+.boot-status{
+  font-family:var(--fm);font-size:.5rem;letter-spacing:2px;
+  color:rgba(212,168,64,.3);text-transform:uppercase;
+}
+
+/* ── GPS LED VIP ── */
+.led{width:9px;height:9px;border-radius:50%;background:#202830;flex-shrink:0}
+.led.on{background:var(--am2);box-shadow:0 0 8px rgba(212,168,64,.7);animation:bl 2.5s infinite}
+.led.srch{background:var(--am);animation:bl .6s infinite}
+
+/* ── INPUT ALANLARI VIP ── */
+.gi{
+  width:100%;
+  background:rgba(14,16,20,.8);
+  border:1px solid rgba(255,255,255,.06);border-radius:6px;
+  padding:12px 14px;color:var(--tx);font-family:var(--fm);font-size:15px;
+  outline:none;margin-bottom:8px;transition:all .18s;
+  letter-spacing:.5px;
+}
+.gi:focus{
+  border-color:rgba(212,168,64,.35);
+  background:rgba(18,20,24,.9);
+  box-shadow:0 0 0 3px rgba(212,168,64,.06);
+}
+.gi::placeholder{color:#303840;letter-spacing:0;font-family:var(--f1)}
+
+/* ── TOGGLER VIP ── */
+.li.on .tog{background:rgba(212,168,64,.2);border-color:rgba(212,168,64,.4)}
+.li.on .tog::after{background:var(--am2);left:18px;box-shadow:0 0 6px rgba(212,168,64,.5)}
+
+/* ── COORDS MINI ── */
+#tb-latlon-row{
+  display:flex;align-items:center;gap:4px;
+  font-family:var(--fm);font-size:.48rem;color:rgba(212,168,64,.3);letter-spacing:.5px;
+}
+
+/* ── MOBILE ADJUSTMENTS ──── */
+@media(max-width:600px){
+  .tagline{display:none}
+  .logo-t{font-size:.8rem;letter-spacing:1.5px}
+}
+
+/* ── MOBILE APP (≤480px) — Kapsamlı UI İyileştirme ── */
+@media(max-width:480px){
+  :root{
+    --th-base:48px;--bh-base:58px;
+    --th:calc(48px + var(--sat));
+    --bh:calc(58px + var(--sab));
+    --pw:100vw; /* Panel tam genişlik */
+  }
+
+  /* TOOLBAR */
+  .logo{padding:0 8px;gap:5px;border-right:1px solid var(--g1)}
+  .logo-img{width:36px;height:36px}
+  .logo-t{font-size:.72rem;letter-spacing:1px}
+  .tb{font-size:.66rem;padding:4px 8px;height:34px;letter-spacing:1px}
+  #north{display:none}
+
+  /* GPS göstergesi daha belirgin */
+  #gps-s{font-size:.65rem;gap:5px;padding-right:10px}
+  .led{width:8px;height:8px}
+
+  /* PANEL — tam genişlik, daha kullanışlı */
+  #panel{border-right:none;box-shadow:0 0 24px rgba(0,0,0,.7)}
+
+  /* Panel başlığı */
+  .ph{height:48px}
+  .ph-title{font-size:.95rem;padding-left:16px}
+  #btn-close-panel{width:48px;height:48px;font-size:1.4rem}
+
+  /* Sekmeler — büyük dokunma hedefi */
+  .ptabs{background:var(--s2)}
+  .ptab{padding:13px 12px;font-size:.68rem;letter-spacing:.2px;min-height:46px}
+
+  /* Panel içeriği daha rahat */
+  .tp{padding:12px}
+  .sl{font-size:.7rem;margin:16px 0 8px;letter-spacing:.8px}
+
+  /* ARAÇ BUTONU GRIDI — 2 kolon, büyük */
+  .tool-grid{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:6px}
+  .tool-btn{padding:20px 6px;min-height:76px;border-radius:6px;gap:8px}
+  .tool-ico svg{width:26px;height:26px}
+  .tool-lbl{font-size:.76rem;letter-spacing:.2px}
+
+  /* Butonlar — minimum 48px yükseklik */
+  .gbtn{padding:12px 14px;font-size:.82rem;min-height:48px;border-radius:4px;margin-bottom:6px}
+  .gbtn.full{width:100%;text-align:center}
+
+  /* Katman listesi */
+  .li{padding:11px 8px;min-height:50px}
+  .li-ico{width:34px;height:34px}
+  .li-n{font-size:.88rem}
+  .li-d{font-size:.68rem}
+  .tog{width:36px;height:20px}
+  .tog::after{width:14px;height:14px;top:2px;left:2px}
+  .li.on .tog::after{left:18px}
+
+  /* Waypoint listesi */
+  .wi{padding:11px 8px;min-height:52px}
+  .wn{font-size:.86rem}
+  .wco{font-size:.6rem}
+  .ic{min-width:36px;min-height:36px;padding:6px}
+
+  /* Koordinat girişleri */
+  .gi{font-size:16px;padding:11px 13px;min-height:48px;margin-bottom:8px}
+  .gi:last-of-type{margin-bottom:8px}
+
+  /* Hızlı şehir butonları */
+  .pgrid{gap:6px}
+  .pbtn{padding:9px 12px;font-size:.72rem;min-height:40px}
+
+  /* Import alanı */
+  .impz{padding:24px;min-height:80px}
+  .impz-ico{font-size:2rem}
+  .impz-t{font-size:.82rem}
+  #cimp{font-size:16px;padding:10px}
+
+  /* İstatistik kartları */
+  .sg{grid-template-columns:1fr 1fr;gap:6px}
+  .sb{padding:12px;border-radius:8px}
+  .sv{font-size:1.1rem}
+  .sk{font-size:.64rem}
+
+  /* ASKERİ SEMBOLLERİ — 2 kolon, okunabilir */
+  .mg{grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+  .msb{padding:10px 4px;border-radius:4px;min-height:64px}
+  .msb-svg{width:56px;height:36px}
+  .msb-lbl{font-size:.52rem;line-height:1.3}
+  .mcb{padding:8px 4px;font-size:.62rem;min-height:44px}
+  .mc-title{font-size:.64rem;letter-spacing:1.5px;margin:10px 0 5px}
+  .szrow{padding:6px 0}
+  .szrow label{font-size:.6rem}
+
+  /* Askeri yer işareti popup */
+  .mpi{padding:10px;min-height:52px}
+  .mpin{font-size:.78rem}
+  .mpic{font-size:.56rem}
+
+  /* Alan listesi */
+  .ai{padding:11px 8px;min-height:50px}
+  .ai-n{font-size:.84rem}
+  .ai-d{font-size:.6rem}
+
+  /* DIALOG kutular */
+  .do{padding:12px}
+  .db{max-width:100%;border-radius:10px;padding:22px 18px}
+  .dtit{font-size:.95rem;margin-bottom:14px;letter-spacing:2px}
+  .dlbl{font-size:.62rem;margin:10px 0 4px;letter-spacing:1.5px}
+  .di{font-size:16px;padding:12px 13px;min-height:48px;border-radius:6px}
+  .dbtns{gap:8px;margin-top:16px}
+  .dbtn{padding:14px 6px;font-size:.84rem;min-height:50px;border-radius:6px}
+  .crow{gap:10px;margin-top:5px}
+  .co{width:30px;height:30px;border-radius:4px}
+
+  /* SAĞ KENAR ÇUBUĞU */
+  .sbtn{width:46px;height:46px;border-radius:8px}
+
+  /* DOCK mobil */
+  .dock-btn span{font-size:.48rem;letter-spacing:1px}
+
+  /* YÜZEN BİLGİ ÇUBUKLARI */
+  .fbar{left:8px;right:8px;bottom:calc(var(--bh) + 8px)}
+  .fbar-info{padding:12px 14px}
+  .fbar-info strong{font-size:.94rem}
+  .fbar-btn{min-width:64px;font-size:.72rem;padding:0 14px}
+  .fbar-x{min-width:48px;font-size:1.2rem}
+
+  /* ÇİZİM RENK ÇUBUĞU */
+  #draw-bar{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:8px;padding:8px 12px}
+  .dcol{width:28px!important;height:28px!important;border-radius:50%!important}
+
+  /* Notification */
+  #notif{font-size:.8rem;padding:8px 16px;border-radius:6px}
+
+  /* POPUP butonlar */
+  .pop-btn{padding:7px 12px;font-size:.7rem;min-height:36px}
+}
+
+@media(max-width:360px){
+  :root{--pw:100vw}
+  .logo-t{font-size:.66rem}
+  .tb{font-size:.60rem;padding:3px 6px;height:32px;letter-spacing:.8px}
+  .tool-btn{padding:16px 4px;min-height:68px}
+  .ptab{padding:11px 9px;font-size:.64rem}
+  .gbtn{font-size:.76rem;padding:10px 10px}
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<!-- YÜZEN MENÜ BUTONU (3 çizgi) -->
+<button id="fab-menu" onclick="togglePanel()" title="Menü">
+  <svg id="menu-ico" width="22" height="22" viewBox="0 0 22 22" fill="currentColor">
+    <rect x="3" y="5" width="16" height="2.5" rx=".5"/>
+    <rect x="3" y="10" width="16" height="2.5" rx=".5"/>
+    <rect x="3" y="15" width="16" height="2.5" rx=".5"/>
+  </svg>
+</button>
+
+<!-- CROSSHAIR -->
+<div id="xhair"><svg width="44" height="44" viewBox="0 0 44 44" fill="none"><line x1="22" y1="0" x2="22" y2="15" stroke="#c8900a" stroke-width="1.5"/><line x1="22" y1="29" x2="22" y2="44" stroke="#c8900a" stroke-width="1.5"/><line x1="0" y1="22" x2="15" y2="22" stroke="#c8900a" stroke-width="1.5"/><line x1="29" y1="22" x2="44" y2="22" stroke="#c8900a" stroke-width="1.5"/><circle cx="22" cy="22" r="4" stroke="#c8900a" stroke-width="1.2"/><circle cx="22" cy="22" r="1.5" fill="#c8900a"/></svg></div>
+<!-- CROSSHAIR ACTION BUTTON -->
+<button id="xhair-btn" onclick="addAtCenter()" style="
+  display:none;position:fixed;
+  bottom:calc(var(--bh) + 80px);left:50%;transform:translateX(-50%);
+  z-index:210;
+  background:var(--am);border:2px solid var(--am2);color:#060a06;
+  font-family:'Arial Narrow',sans-serif;font-size:.8rem;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:10px 24px;cursor:pointer;
+  box-shadow:0 1px 4px rgba(0,0,0,.4);
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  white-space:nowrap;
+">+ NOKTA EKLE</button>
+
+<!-- NORTH ARROW -->
+<div id="north"><svg width="28" height="36" viewBox="0 0 28 36"><polygon points="14,2 20,18 14,14 8,18" fill="#c84040" opacity=".9"/><polygon points="14,34 20,18 14,22 8,18" fill="#606060" opacity=".7"/><text x="14" y="10" text-anchor="middle" font-size="7" fill="#c84040" font-family="Arial Narrow" font-weight="bold">K</text></svg></div>
+
+<!-- MODE BAR -->
+<div id="mbar"></div>
+
+<!-- TOOLBAR — TAKTİK HUD -->
+<div id="toolbar">
+  <!-- Menü butonu -->
+  <button id="fab-menu" onclick="togglePanel()" title="Menü">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+      <rect x="2" y="4" width="16" height="2" rx=".4"/>
+      <rect x="2" y="9" width="16" height="2" rx=".4"/>
+      <rect x="2" y="14" width="16" height="2" rx=".4"/>
+    </svg>
+  </button>
+
+  <!-- GPS durumu -->
+  <div id="gps-s" onclick="startGPS()">
+    <div class="led" id="gps-led"></div>
+    <span id="gps-txt">NO FIX</span>
+  </div>
+
+  <!-- KOORDİNAT GÖSTERGE — hero element -->
+  <div id="tb-coord" onclick="cycleCoord()">
+    <div id="tb-mgrs-val">— ——— —— ——</div>
+    <div id="tb-latlon-row">
+      <span id="tb-lat-val">—.———</span>
+      <span class="sep">·</span>
+      <span id="tb-lon-val">—.———</span>
+    </div>
+  </div>
+
+  <!-- Aktif mod etiketi -->
+  <div id="tb-mode-tag"></div>
+
+  <!-- Zoom + Saat -->
+  <div id="tb-right">
+    <span class="tb-zoom">Z·<span id="c-z">6</span></span>
+    <span class="tb-clock" id="tb-clock">--:--</span>
+  </div>
+
+  <!-- JS uyumluluk için gizli elementler -->
+  <button class="tb" id="tb-gps" onclick="startGPS()">GPS</button>
+  <button class="tb" id="tb-trk" onclick="toggleTrack()">İZ</button>
+  <button class="tb am" id="tb-msr" onclick="toggleMeasure()">ÖLÇÜM</button>
+  <button class="tb am" id="tb-brg" onclick="setMode('bearing')">İSTİKAMET</button>
+  <button class="tb" id="tb-wp" onclick="setMode('waypoint')">NOKTA</button>
+  <button class="tb am" id="tb-mil" onclick="setMode('military');openMilPanel()">ASKERİ</button>
+  <button class="tb" id="tb-area" onclick="setMode('area')">ALAN</button>
+  <button class="tb" id="tb-rte" onclick="setMode('route')">YOL</button>
+  <button class="tb" id="tb-rng" onclick="setMode('range')">MENZİL</button>
+  <button class="tb am" id="tb-draw" onclick="startDraw()">ÇİZ</button>
+  <!-- Gizli koordinat spanları — JS güncellemesi için -->
+  <span id="c-lat" style="display:none"></span>
+  <span id="c-lon" style="display:none"></span>
+  <div id="mgrs-d" style="display:none"><span id="c-mgrs"></span></div>
+  <!-- Gizli ölçek elemanları -->
+  <div class="scalebar" style="display:none">
+    <div class="scaleline" id="scaleln" style="width:60px"></div>
+    <div class="scalelbl" id="scalelbl">—</div>
+  </div>
+</div>
+
+<!-- BOOT EKRANI -->
+<div id="boot">
+  <div class="boot-logo">KOMANDONAV</div>
+  <div class="boot-sub">Tactical Navigation System</div>
+  <div class="boot-bar"><div class="boot-prog"></div></div>
+  <div class="boot-status" id="boot-st">SİSTEM BAŞLATILIYOR...</div>
+</div>
+
+<!-- TAKTİK OVERLAY -->
+<div id="vignette"></div>
+<div id="corners">
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+</div>
+<div id="crosshair"><div class="ch-dot"></div></div>
+
+<!-- PANEL BACKDROP -->
+<div id="pbd" onclick="closePanel()"></div>
+
+<!-- LEFT PANEL -->
+<div id="panel">
+  <div class="ph">
+    <div class="ph-title">⊞ MENÜ</div>
+    <button id="btn-close-panel" onclick="closePanel()">✕</button>
+  </div>
+  <div class="ptabs">
+    <button class="ptab on" onclick="swTab('tools',this)">ARAÇLAR</button>
+    <button class="ptab" onclick="swTab('layers',this)">KATMAN</button>
+    <button class="ptab" onclick="swTab('wpts',this)">NOKTA</button>
+    <button class="ptab" onclick="swTab('mil',this)">ASKERİ</button>
+    <button class="ptab" onclick="swTab('areas',this)">ALAN</button>
+    <button class="ptab" onclick="swTab('track',this)">İZ</button>
+    <button class="ptab" onclick="swTab('goto',this)">GİT</button>
+    <button class="ptab" onclick="swTab('import',this)">AKTAR</button>
+  </div>
+  <div class="pc">
+    <!-- ARAÇLAR -->
+    <div class="tp on" id="tab-tools">
+      <div class="sl">Çizim & Ölçüm Araçları</div>
+      <div class="tool-grid">
+        <button class="tool-btn" id="tg-msr" onclick="toolGo('measure')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M3 11l8-8 8 8-8 8z"/><path d="M7 11l1.5-1.5M11 11l1.5-1.5M9 13l1.5-1.5"/></svg></span><span class="tool-lbl">ÖLÇÜM</span></button>
+        <button class="tool-btn" id="tg-brg" onclick="toolGo('bearing')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M11 4l2 7-2 7-2-7z" fill="currentColor" stroke="none"/></svg></span><span class="tool-lbl">İSTİKAMET</span></button>
+        <button class="tool-btn" id="tg-wp" onclick="toolGo('waypoint')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M11 2C7 2 4 5 4 9c0 5 7 11 7 11s7-6 7-11c0-4-3-7-7-7z"/><circle cx="11" cy="9" r="2"/></svg></span><span class="tool-lbl">NOKTA</span></button>
+        <button class="tool-btn" id="tg-mil" onclick="toolGoMil()"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><rect x="3" y="5" width="16" height="12"/><path d="M3 5l16 12M19 5L3 17"/></svg></span><span class="tool-lbl">ASKERİ</span></button>
+        <button class="tool-btn" id="tg-area" onclick="toolGo('area')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M4 6l7-3 7 4-2 9-9 2-4-6z"/></svg></span><span class="tool-lbl">ALAN</span></button>
+        <button class="tool-btn" id="tg-rte" onclick="toolGo('route')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="5" cy="17" r="2"/><circle cx="17" cy="5" r="2"/><path d="M5 15V9a4 4 0 014-4h4"/></svg></span><span class="tool-lbl">YOL</span></button>
+        <button class="tool-btn" id="tg-rng" onclick="toolGo('range')"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="3"/><circle cx="11" cy="11" r="8"/></svg></span><span class="tool-lbl">MENZİL</span></button>
+        <button class="tool-btn" id="tg-draw" onclick="toolDraw()"><span class="tool-ico"><svg width="22" height="22" viewBox="0 0 22 22" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M3 19l3-1L17 7l-2-2L4 16z"/><path d="M14 5l2-2 2 2-2 2z"/></svg></span><span class="tool-lbl">SERBEST ÇİZ</span></button>
+      </div>
+      <div class="sl">GPS & İZ</div>
+      <div class="act-group">
+        <button class="act-btn" id="tg-gps" onclick="startGPS()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="3"/><circle cx="11" cy="11" r="8"/><line x1="11" y1="1" x2="11" y2="5"/><line x1="11" y1="17" x2="11" y2="21"/><line x1="1" y1="11" x2="5" y2="11"/><line x1="17" y1="11" x2="21" y2="11"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">GPS BAŞLAT</span>
+            <span class="act-sub">Konum kilidini etkinleştir</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+        <button class="act-btn" id="tg-trk" onclick="toggleTrack()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="4"/><path d="M4 4l4 4M18 4l-4 4M4 18l4-4M18 18l-4-4"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">İZ KAYDI</span>
+            <span class="act-sub">Güzergahı kaydet</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+        <button class="act-btn" onclick="locateMe()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 2C7 2 4 5 4 9c0 5 7 11 7 11s7-6 7-11c0-4-3-7-7-7z"/><circle cx="11" cy="9" r="2.5"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">KONUMUMA GİT</span>
+            <span class="act-sub">Haritayı konuma ortala</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+      </div>
+
+      <div class="sl">HIZLI ERİŞİM</div>
+      <div class="act-group">
+        <button class="act-btn" onclick="openGoto()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="11" y1="7" x2="11" y2="11"/><line x1="11" y1="11" x2="14" y2="11"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">KONUMA GİT</span>
+            <span class="act-sub">Koordinat veya yer adı</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+        <button class="act-btn" onclick="toggleNight()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">GECE MODU</span>
+            <span class="act-sub">Harita renk şeması</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+        <button class="act-btn" onclick="cycleCoord()">
+          <span class="act-ico">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="16" height="12" rx="1"/><path d="M7 9h2M7 13h4M13 9h2"/></svg>
+          </span>
+          <span class="act-text">
+            <span class="act-title">KOORDİNAT FORMATI</span>
+            <span class="act-sub">MGRS / DD / DMS</span>
+          </span>
+          <span class="act-arrow">›</span>
+        </button>
+      </div>
+    </div>
+    <!-- LAYERS -->
+    <div class="tp" id="tab-layers">
+      <div class="sl">Temel Harita</div>
+      <div class="li on" id="lyr-osm" onclick="setBase('osm')"><div class="li-ico"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" fill="none" stroke-width="1.4"><path d="M2 4l4-2 4 2 4-2v10l-4 2-4-2-4 2zM6 2v10M10 4v10"/></svg></div><div style="flex:1"><div class="li-n">OpenStreetMap</div><div class="li-d">Standart harita</div></div><div class="tog"></div></div>
+      <div class="li" id="lyr-topo" onclick="setBase('topo')"><div class="li-ico"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" fill="none" stroke-width="1.4"><path d="M1 13l4-8 3 5 2-3 5 6z"/><circle cx="8" cy="5" r="1" fill="currentColor" stroke="none"/></svg></div><div style="flex:1"><div class="li-n">Topografik</div><div class="li-d">Eğri çizgiler</div></div><div class="tog"></div></div>
+      <div class="li" id="lyr-sat" onclick="setBase('sat')"><div class="li-ico"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" fill="none" stroke-width="1.4"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></div><div style="flex:1"><div class="li-n">Uydu (ESRI)</div><div class="li-d">Yüksek çözünürlük</div></div><div class="tog"></div></div>
+      <div class="sl">Üst Katman</div>
+      <div class="li" id="lyr-hill" onclick="togOvl('hill')"><div class="li-ico"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" fill="none" stroke-width="1.4"><path d="M1 14l5-9 4 6M7 14l4-7 4 7z"/></svg></div><div style="flex:1"><div class="li-n">Arazi Gölgesi</div><div class="li-d">Topoğrafik</div></div><div class="tog"></div></div>
+      <div class="oprow" id="hill-op" style="display:none"><span class="oplbl">Şff.</span><input type="range" min="0" max="100" value="50" oninput="setOvlOp('hill',this.value)"><span class="oplbl" id="hill-v">50%</span></div>
+      <div class="sl" style="margin-top:14px">Diğer Araçlar</div>
+      <button class="gbtn full" onclick="openGoto()">⊙ KONUMA GİT</button>
+      <button class="gbtn full" onclick="setMode('range');closePanel()">⊙ MENZİL HALKASI</button>
+      <button class="gbtn full" onclick="toggleNight()">GECE MODU</button>
+      <button class="gbtn full" onclick="cycleCoord()">⊞ KOORDİNAT FORMATI</button>
+    </div>
+    <!-- WAYPOINTS -->
+    <div class="tp" id="tab-wpts">
+      <div id="wp-list"></div>
+      <div id="wp-empty" class="empty-s"><div style="font-size:1.6rem">◈</div><div class="empty-t">NOKTA MODU → Haritaya tıkla</div></div>
+      <div class="sl" style="margin-top:10px">Dışa Aktar</div>
+      <button class="gbtn full" onclick="exportWP()">GPX DIŞA AKTAR</button>
+      <button class="gbtn full" style="border-color:var(--rd2);color:var(--rd2)" onclick="clearWP()">TÜMÜNÜ SİL</button>
+    </div>
+    <!-- MILITARY -->
+    <div class="tp" id="tab-mil">
+      <div class="sl">NATO Kimlik Rengi</div>
+      <div class="mcbar">
+        <div class="mcb mcb-bl on" id="mc-blue" onclick="setMilColor('blue')">DOST<br>MAVİ</div>
+        <div class="mcb mcb-rd" id="mc-red" onclick="setMilColor('red')">DÜŞMAN<br>KRMZ</div>
+        <div class="mcb mcb-gn" id="mc-green" onclick="setMilColor('green')">TRSZ<br>YŞL</div>
+        <div class="mcb mcb-yw" id="mc-yellow" onclick="setMilColor('yellow')">BLRSZ<br>SARI</div>
+      </div>
+      <div class="sl">Varsayılan Boyut</div>
+      <div class="szrow"><label>BOYUT</label><input type="range" id="mil-sz-r" min="50" max="250" value="100" oninput="milSz=+this.value;document.getElementById('mil-sz-v').textContent=this.value+'%'"><span class="szv" id="mil-sz-v">100%</span></div>
+      <div class="szrow"><label>KALINLIK</label><input type="range" id="mil-lw-r" min="1" max="6" step="0.5" value="2" oninput="milLineW=+this.value;document.getElementById('mil-lw-v').textContent=this.value+'px';buildMilPanel()"><span class="szv" id="mil-lw-v">2px</span></div>
+      <div class="sl">Sembol Seç → Haritaya Tıkla</div>
+      <div style="font-size:.56rem;color:var(--mu);margin-bottom:5px;line-height:1.4">İpucu: Yerleştirdiğin işareti basılı tutup sürükleyerek taşıyabilirsin.</div>
+      <div id="mil-syms"></div>
+      <div class="sl" style="margin-top:8px">Konuşlandırılmış</div>
+      <div id="mil-placed"></div>
+      <button class="gbtn full" style="margin-top:6px;border-color:var(--rd2);color:var(--rd2)" onclick="clearMil()">TÜMÜNÜ SİL</button>
+    </div>
+    <!-- AREAS -->
+    <div class="tp" id="tab-areas">
+      <div class="sl">Alan Türü</div>
+      <div id="area-types"></div>
+      <div class="sl" style="margin-top:8px">Çizilen Alanlar</div>
+      <div id="area-list"><div class="empty-s"><div class="empty-t">ALAN MODU → Haritaya tıkla</div></div></div>
+      <button class="gbtn full" style="margin-top:6px;border-color:var(--rd2);color:var(--rd2)" onclick="clearAreas()">TÜMÜNÜ SİL</button>
+    </div>
+    <!-- TRACK -->
+    <div class="tp" id="tab-track">
+      <div class="sg">
+        <div class="sb"><div class="sv" id="st-d">0.00 km</div><div class="sk">Mesafe</div></div>
+        <div class="sb"><div class="sv" id="st-t">00:00</div><div class="sk">Süre</div></div>
+        <div class="sb"><div class="sv" id="st-p">0</div><div class="sk">Nokta</div></div>
+        <div class="sb"><div class="sv" id="st-s">0.0</div><div class="sk">km/h</div></div>
+      </div>
+      <canvas id="prof-c"></canvas>
+      <div class="sl" style="margin-top:8px">Dışa Aktar</div>
+      <button class="gbtn full" onclick="exportTrack()">GPX İNDİR</button>
+      <button class="gbtn full" style="border-color:var(--rd2);color:var(--rd2)" onclick="clearTrack()">İZİ TEMİZLE</button>
+      <div class="sl" style="margin-top:12px">Geçmiş Kayıtlar</div>
+      <div id="trk-history"></div>
+    </div>
+    <!-- GOTO -->
+    <div class="tp" id="tab-goto">
+      <div class="sl">Koordinata Git</div>
+      <input class="gi" id="gt-lat" placeholder="Enlem — 39.9334" type="number" step="0.00001">
+      <input class="gi" id="gt-lon" placeholder="Boylam — 32.8597" type="number" step="0.00001">
+      <button class="gbtn full" onclick="gotoCoords()">⊙ GİT</button>
+      <div class="sl">MGRS</div>
+      <input class="gi" id="gt-mgrs" placeholder="37SNA 12345 67890" style="text-transform:uppercase">
+      <button class="gbtn full" onclick="gotoMGRS()">⊙ MGRS GİT</button>
+      <div class="sl">Yer Ara</div>
+      <div style="display:flex;gap:4px;margin-bottom:5px">
+        <input class="gi" id="gt-q" placeholder="Şehir, köy, yer..." style="flex:1;margin:0" onkeydown="if(event.key==='Enter')searchPlace()">
+        <button class="gbtn" onclick="searchPlace()">ARA</button>
+      </div>
+      <div id="s-res"></div>
+      <div class="sl">Hızlı</div>
+      <div class="pgrid">
+        <button class="pbtn" onclick="flyTo(39.9334,32.8597,13,'Ankara')">ANKARA</button>
+        <button class="pbtn" onclick="flyTo(41.0082,28.9784,13,'İstanbul')">İSTANBUL</button>
+        <button class="pbtn" onclick="flyTo(38.4237,27.1428,13,'İzmir')">İZMİR</button>
+        <button class="pbtn" onclick="flyTo(36.8969,30.7133,13,'Antalya')">ANTALYA</button>
+        <button class="pbtn" onclick="flyTo(37.0,43.0,11,'Van')">VAN</button>
+        <button class="pbtn" onclick="flyTo(39.9208,41.2769,12,'Erzurum')">ERZURUM</button>
+        <button class="pbtn" onclick="flyTo(40.1885,29.0610,12,'Bursa')">BURSA</button>
+        <button class="pbtn" onclick="flyTo(37.0662,37.3833,12,'Gaziantep')">GAZİANTEP</button>
+      </div>
+    </div>
+    <!-- IMPORT -->
+    <div class="tp" id="tab-import">
+
+      <!-- TOPLU DIŞA AKTARMA -->
+      <div class="sl">Toplu Dışa Aktarma</div>
+      <div id="export-summary" style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:10px"></div>
+      <button class="gbtn full" onclick="exportAll()" style="border-color:var(--gb);color:var(--gb);font-size:.8rem;min-height:50px;letter-spacing:1px">
+        ▼ TÜMÜNÜ GPX OLARAK İNDİR
+      </button>
+      <button class="gbtn full" onclick="exportAllJSON()" style="border-color:var(--g3);color:var(--g3);font-size:.75rem">
+        ▼ TÜMÜNÜ JSON OLARAK İNDİR
+      </button>
+
+      <!-- AYRI AKTAR -->
+      <div class="sl" style="margin-top:14px">Ayrı Aktar</div>
+      <button class="gbtn full" onclick="exportWP()">Noktalar — GPX</button>
+      <button class="gbtn full" onclick="exportMilJSON()">Askeri İşaretler — JSON</button>
+      <button class="gbtn full" onclick="exportAreasJSON()">Alanlar — JSON</button>
+      <button class="gbtn full" onclick="exportTrack()">İz — GPX</button>
+
+      <!-- İÇE AKTAR -->
+      <div class="sl" style="margin-top:14px">İçe Aktar (GPX / KML)</div>
+      <div class="impz" onclick="document.getElementById('imp-file').click()" ondragover="event.preventDefault();this.classList.add('over')" ondragleave="this.classList.remove('over')" ondrop="dropFile(event)">
+        <div class="impz-ico">+</div><div class="impz-t">DOSYA SEÇ VEYA SÜRÜKLE</div>
+      </div>
+      <input type="file" id="imp-file" accept=".gpx,.kml,.xml" onchange="impFile(event)">
+      <div class="sl">Koordinat Listesi (Ad,Enlem,Boylam)</div>
+      <textarea id="cimp" rows="3" placeholder="ÜS-1,39.9334,32.8597&#10;ÜS-2,41.0082,28.9784"></textarea>
+      <button class="gbtn full" onclick="importCoords()">📥 İÇE AKTAR</button>
+      <div id="imp-res"></div>
+    </div>
+  </div>
+</div>
+
+<!-- RIGHT SIDEBAR (zoom) -->
+<div id="sidebar">
+  <button class="sbtn" onclick="map.zoomIn()"><div class="tt">YAKLAŞ</div>+</button>
+  <button class="sbtn" onclick="map.zoomOut()"><div class="tt">UZAKLAŞ</div>−</button>
+  <div class="ssep"></div>
+  <button class="sbtn" id="sb-night" onclick="toggleNight()"><div class="tt">GECE MODU</div><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M11 7.5A4.5 4.5 0 016.5 3c0-.2 0-.4.02-.6A5.5 5.5 0 1011 7.5z"/></svg></button>
+  <button class="sbtn" onclick="locateMe()"><div class="tt">KONUMUM</div><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="2.2"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="7" cy="7" r="5.2" stroke="currentColor" stroke-width=".8" fill="none"/></svg></button>
+</div>
+
+<!-- BOTTOM DOCK -->
+<div id="bot">
+  <button class="dock-btn" id="dock-gps" onclick="startGPS()">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4">
+      <circle cx="11" cy="11" r="3"/><circle cx="11" cy="11" r="8" stroke-dasharray="2.5 2"/>
+      <line x1="11" y1="1" x2="11" y2="5"/><line x1="11" y1="17" x2="11" y2="21"/>
+      <line x1="1" y1="11" x2="5" y2="11"/><line x1="17" y1="11" x2="21" y2="11"/>
+    </svg>
+    <span>GPS</span>
+  </button>
+  <button class="dock-btn" onclick="toolGo('measure');closePanel()">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M2 15L7 4l13 5-5 11z"/><line x1="7.5" y1="8.5" x2="14.5" y2="11.5" stroke-width="1"/>
+    </svg>
+    <span>ÖLÇÜM</span>
+  </button>
+  <button class="dock-btn" onclick="toolGo('waypoint');closePanel()">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M11 2C7.7 2 5 4.7 5 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.3-2.7-6-6-6z"/>
+      <circle cx="11" cy="8" r="2"/>
+    </svg>
+    <span>NOKTA</span>
+  </button>
+  <button class="dock-btn" onclick="toolGoMil()">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="2" y="5" width="18" height="12"/>
+      <line x1="2" y1="5" x2="20" y2="17"/><line x1="20" y1="5" x2="2" y2="17"/>
+    </svg>
+    <span>ASKERİ</span>
+  </button>
+  <button class="dock-btn dock-locate" onclick="locateMe()">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4">
+      <circle cx="11" cy="11" r="3" fill="currentColor"/><circle cx="11" cy="11" r="7.5"/>
+      <line x1="11" y1="1" x2="11" y2="5"/><line x1="11" y1="17" x2="11" y2="21"/>
+      <line x1="1" y1="11" x2="5" y2="11"/><line x1="17" y1="11" x2="21" y2="11"/>
+    </svg>
+    <span>KONUM</span>
+  </button>
+  <!-- JS için gizli elementler -->
+  <span id="c-lat" style="display:none"></span>
+  <span id="c-lon" style="display:none"></span>
+  <div id="mgrs-d" style="display:none"><span id="c-mgrs"></span></div>
+  <div style="display:none"><div class="scaleline" id="scaleln"></div><span class="scalelbl" id="scalelbl"></span></div>
+</div>
+
+<!-- FLOAT INFO BARS -->
+<!-- ÖLÇÜM INFO BAR -->
+<div class="fbar" id="m-info">
+  <div class="fbar-info">
+    <span class="fbar-tag">MESAFE</span>
+    <strong id="m-tot">0 m</strong>
+    <span class="fbar-sub">son: <span id="m-seg">—</span></span>
+  </div>
+  <div class="fbar-actions">
+    <button class="fbar-btn save" onclick="finishMeasure()">KAYDET</button>
+    <button class="fbar-x" onclick="cancelMeasure()">✕</button>
+  </div>
+</div>
+
+<!-- İSTİKAMET INFO BAR -->
+<div class="fbar" id="b-info">
+  <div class="fbar-info">
+    <span class="fbar-tag">İSTİKAMET</span>
+    <strong id="b-deg">—°</strong>
+    <span id="b-mil" style="color:var(--am2)">— mil</span>
+    <span class="fbar-sub"><span id="b-dist">—</span></span>
+  </div>
+  <div class="fbar-actions">
+    <button class="fbar-btn" style="color:var(--rd2)" onclick="clearBearing()">TEMİZLE</button>
+    <button class="fbar-x" onclick="setMode('cursor')">✕</button>
+  </div>
+</div>
+
+<!-- ALAN INFO BAR -->
+<div class="fbar" id="a-info">
+  <div class="fbar-info">
+    <span class="fbar-tag">ALAN ÇİZ</span>
+    <strong id="a-pts">0</strong>
+    <span class="fbar-sub">nokta eklendi</span>
+  </div>
+  <div class="fbar-actions">
+    <button class="fbar-btn save" onclick="finishArea()">BİTİR</button>
+    <button class="fbar-x" onclick="cancelArea()">✕</button>
+  </div>
+</div>
+
+<!-- YOL INFO BAR -->
+<div class="fbar blue" id="r-info">
+  <div class="fbar-info">
+    <span class="fbar-tag">YOL</span>
+    <span id="r-status">Başlangıç noktasına tıkla</span>
+    <span id="r-detail" style="display:none;gap:4px" class="fbar-sub"><span id="r-dist">—</span> / <span id="r-time">—</span></span>
+  </div>
+  <div class="fbar-actions">
+    <button class="fbar-x" onclick="setMode('cursor');clearRoute()">✕</button>
+  </div>
+</div>
+
+<!-- DIALOGS -->
+<div class="do" id="dlg-wp"><div class="db">
+  <div class="dtit">◈ WAYPOINT</div>
+  <div class="dlbl">Ad</div><input class="di" id="wp-name" placeholder="WP-001" maxlength="30">
+  <div class="dlbl">Not</div><input class="di" id="wp-note" placeholder="Açıklama (isteğe bağlı)">
+  <div class="dlbl">Renk</div>
+  <div class="crow">
+    <div class="co on" style="background:#4a8040" data-c="#4a8040" onclick="pickC(this)"></div>
+    <div class="co" style="background:#c8900a" data-c="#c8900a" onclick="pickC(this)"></div>
+    <div class="co" style="background:#c84040" data-c="#c84040" onclick="pickC(this)"></div>
+    <div class="co" style="background:#2a6ac0" data-c="#2a6ac0" onclick="pickC(this)"></div>
+    <div class="co" style="background:#c8c020" data-c="#c8c020" onclick="pickC(this)"></div>
+    <div class="co" style="background:#fff" data-c="#fff" onclick="pickC(this)"></div>
+  </div>
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-wp')">İPTAL</button><button class="dbtn" onclick="saveWP()">KAYDET</button></div>
+</div></div>
+
+<div class="do" id="dlg-wp-edit"><div class="db am">
+  <div class="dtit am">✏ NOKTA DÜZENLE</div>
+  <div class="dlbl">Ad</div><input class="di" id="wpe-name" placeholder="WP-001">
+  <div class="dlbl">Not</div><input class="di" id="wpe-note" placeholder="Açıklama">
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-wp-edit')">İPTAL</button><button class="dbtn am" onclick="saveWPEdit()">KAYDET</button></div>
+</div></div>
+
+<div class="do" id="dlg-mil-edit"><div class="db am">
+  <div class="dtit am">⊞ İŞARET DÜZENLE</div>
+  <div class="dlbl">Ad / Etiket</div><input class="di" id="mile-name" placeholder="1.P.TB.">
+  <div class="dlbl">Not</div><input class="di" id="mile-note" placeholder="Açıklama">
+  <div class="dlbl">Boyut</div>
+  <div class="szrow" style="margin-bottom:0"><label>BOYUT</label><input type="range" id="mile-sz" min="50" max="250" value="100" oninput="document.getElementById('mile-szv').textContent=this.value+'%'"><span class="szv" id="mile-szv">100%</span></div>
+  <div class="dlbl">Çizgi Kalınlığı</div>
+  <div class="szrow" style="margin-bottom:0"><label>KALINLIK</label><input type="range" id="mile-lw" min="1" max="6" step="0.5" value="2" oninput="document.getElementById('mile-lwv').textContent=this.value+'px'"><span class="szv" id="mile-lwv">2px</span></div>
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-mil-edit')">İPTAL</button><button class="dbtn rd" onclick="deleteMilDlg()">SİL</button><button class="dbtn am" onclick="saveMilEdit()">KAYDET</button></div>
+</div></div>
+
+<div class="do" id="dlg-area"><div class="db am">
+  <div class="dtit am">⬡ ALAN ADI</div>
+  <div class="dlbl">Ad</div><input class="di" id="area-nm" placeholder="ÜS BÖLGESİ 1">
+  <div class="dbtns"><button class="dbtn s" onclick="cancelArea()">İPTAL</button><button class="dbtn am" onclick="confirmArea()">KAYDET</button></div>
+</div></div>
+
+<div class="do" id="dlg-area-edit"><div class="db am">
+  <div class="dtit am">✏ ALAN DÜZENLE</div>
+  <div class="dlbl">Ad</div><input class="di" id="area-ed-nm" placeholder="ÜS BÖLGESİ 1">
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-area-edit')">İPTAL</button><button class="dbtn am" onclick="saveAreaEdit()">KAYDET</button></div>
+</div></div>
+
+<div class="do" id="dlg-range"><div class="db">
+  <div class="dtit">⊙ MENZİL HALKASI</div>
+  <div style="font-size:.65rem;color:var(--mu);margin-bottom:8px;line-height:1.5">Seçilen noktadan belirtilen km mesafelerde daireler çizer. Topçu/havan menzili, gözetleme planı için kullanılır.</div>
+  <div class="dlbl">Mesafeler — km (virgülle ayır)</div>
+  <input class="di" id="rng-v" placeholder="1, 5, 10, 20">
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-range')">İPTAL</button><button class="dbtn" onclick="drawRings()">ÇİZ</button></div>
+</div></div>
+
+<div class="do" id="dlg-goto"><div class="db am">
+  <div class="dtit am">⊙ KONUMA GİT</div>
+  <div class="dlbl">Enlem</div><input class="di" id="dg-lat" placeholder="39.9334" type="number" step="0.00001">
+  <div class="dlbl">Boylam</div><input class="di" id="dg-lon" placeholder="32.8597" type="number" step="0.00001">
+  <div class="dlbl">MGRS (varsa öncelikli)</div><input class="di" id="dg-mgrs" placeholder="37SNA 12345 67890" style="text-transform:uppercase">
+  <div class="dlbl">Zoom</div><input class="di" id="dg-z" placeholder="14" type="number" min="1" max="19">
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-goto')">İPTAL</button><button class="dbtn am" onclick="gotoGo()">GİT ▶</button></div>
+</div></div>
+
+<div class="do" id="dlg-rte-edit"><div class="db am">
+  <div class="dtit am">GÜZERGAH</div>
+  <div class="dlbl">Ad</div><input class="di" id="rte-name" placeholder="GÜZERGAH-1">
+  <div class="dbtns"><button class="dbtn s" onclick="closeDlg('dlg-rte-edit')">İPTAL</button><button class="dbtn am" onclick="saveRteEdit()">KAYDET</button></div>
+</div></div>
+
+<!-- ÇİZİM RENK ÇUBUĞU -->
+<div id="draw-bar" style="display:none;position:fixed;bottom:calc(var(--bh) + 6px);left:50%;transform:translateX(-50%);background:rgba(6,10,6,.97);border:1px solid var(--am);padding:6px 10px;z-index:200;gap:8px;align-items:center;white-space:nowrap;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.5)">
+  <span style="font-family:Arial Narrow;font-size:.65rem;color:var(--am2);font-weight:700;letter-spacing:1px">ÇİZİM:</span>
+  <span class="dcol" data-c="#c8900a" onclick="setDrawColor('#c8900a',this)" style="width:20px;height:20px;background:#c8900a;cursor:pointer;border:2px solid #fff"></span>
+  <span class="dcol" data-c="#2a6ac0" onclick="setDrawColor('#2a6ac0',this)" style="width:20px;height:20px;background:#2a6ac0;cursor:pointer;border:2px solid transparent"></span>
+  <span class="dcol" data-c="#c84040" onclick="setDrawColor('#c84040',this)" style="width:20px;height:20px;background:#c84040;cursor:pointer;border:2px solid transparent"></span>
+  <span class="dcol" data-c="#4a8040" onclick="setDrawColor('#4a8040',this)" style="width:20px;height:20px;background:#4a8040;cursor:pointer;border:2px solid transparent"></span>
+  <span class="dcol" data-c="#ffffff" onclick="setDrawColor('#ffffff',this)" style="width:20px;height:20px;background:#fff;cursor:pointer;border:2px solid transparent"></span>
+  <button class="gbtn" style="padding:3px 8px;font-size:.62rem;margin-left:4px;border-color:var(--rd2);color:var(--rd2)" onclick="undoDraw()">← GERİ AL</button>
+  <button class="gbtn" style="padding:3px 8px;font-size:.62rem" onclick="setMode('cursor')">✔ BİTİR</button>
+</div>
+<div id="notif"></div>
+<script>
+// ═══════════════════════════════════════
+//  NATIVE GPS KÖPRÜSÜ (iOS file:// fix)
+// ═══════════════════════════════════════
+(function(){
+  var _watchId=0;
+  window.__nativeGeoWatchCbs={};
+  window.__nativeGeoSuccess=null;
+  var _nativeGeo={
+    getCurrentPosition:function(success,error,opts){
+      window.__nativeGeoSuccess=function(pos){success(pos);window.__nativeGeoSuccess=null;};
+    },
+    watchPosition:function(success,error,opts){
+      var id=++_watchId;
+      window.__nativeGeoWatchCbs[id]=success;
+      return id;
+    },
+    clearWatch:function(id){
+      delete window.__nativeGeoWatchCbs[id];
+    }
+  };
+  try{Object.defineProperty(navigator,'geolocation',{get:function(){return _nativeGeo;}});}
+  catch(e){navigator.geolocation=_nativeGeo;}
+})();
+
+// ═══════════════════════════════════════
+//  NATO ASKERİ SEMBOLLER
+// ═══════════════════════════════════════
+const NATO_CFG={
+  blue:  {shape:'friend', fill:'#0a1f40',stroke:'#1a5090',txt:'#4090d0',lbl:'DOST'},
+  red:   {shape:'hostile',fill:'#400a0a',stroke:'#901010',txt:'#d04040',lbl:'DÜŞMAN'},
+  green: {shape:'neutral',fill:'#0a200a',stroke:'#107010',txt:'#40a040',lbl:'TARAFSIZ'},
+  yellow:{shape:'unknown',fill:'#302800',stroke:'#705800',txt:'#c0a000',lbl:'BELİRSİZ'},
+};
+
+function natoBox(shape,fill,stroke,W,H,lw){
+  lw=lw||2;
+  if(shape==='friend') return`<rect x="2" y="2" width="${W-4}" height="${H-4}" fill="${fill}" stroke="${stroke}" stroke-width="${lw}"/>`;
+  if(shape==='hostile')return`<path d="M${W/2} 2 L${W-2} ${H/2} L${W/2} ${H-2} L2 ${H/2} Z" fill="${fill}" stroke="${stroke}" stroke-width="${lw}"/>`;
+  if(shape==='neutral'){const s=Math.min(W,H)-4;return`<rect x="${(W-s)/2}" y="${(H-s)/2}" width="${s}" height="${s}" fill="${fill}" stroke="${stroke}" stroke-width="${lw}"/>`;}
+  return`<path d="M${W/2} 3 C${W*.78} 3 ${W-2} ${H*.28} ${W-2} ${H/2} C${W-2} ${H*.78} ${W*.78} ${H-2} ${W/2} ${H-2} C${W*.22} ${H-2} 2 ${H*.78} 2 ${H/2} C2 ${H*.28} ${W*.22} 3 ${W/2} 3 Z" fill="${fill}" stroke="${stroke}" stroke-width="${lw}"/>`;
+}
+
+const BR={
+  piyade:     c=>`<line x1="6" y1="8" x2="42" y2="24" stroke="${c}" stroke-width="2.2"/><line x1="42" y1="8" x2="6" y2="24" stroke="${c}" stroke-width="2.2"/>`,
+  komando:    c=>`<line x1="6" y1="8" x2="42" y2="24" stroke="${c}" stroke-width="2"/><line x1="42" y1="8" x2="6" y2="24" stroke="${c}" stroke-width="2"/><polygon points="24,19 33,27 15,27" fill="${c}"/>`,
+  tank:       c=>`<ellipse cx="24" cy="16" rx="14" ry="9" stroke="${c}" stroke-width="2" fill="none"/>`,
+  topcu:      c=>`<circle cx="24" cy="16" r="6" fill="${c}"/>`,
+  havasav:    c=>`<path d="M6 22 Q24 6 42 22" stroke="${c}" stroke-width="2.2" fill="none"/>`,
+  muhabere:   c=>`<path d="M6 9 L26 15 L26 19 L42 25" stroke="${c}" stroke-width="2.2" fill="none"/>`,
+  istihkam:   c=>`<line x1="14" y1="9" x2="14" y2="25" stroke="${c}" stroke-width="2.2"/><line x1="34" y1="9" x2="34" y2="25" stroke="${c}" stroke-width="2.2"/><line x1="14" y1="9" x2="34" y2="9" stroke="${c}" stroke-width="2.2"/><line x1="14" y1="17" x2="34" y2="17" stroke="${c}" stroke-width="1.8"/>`,
+  kesif:      c=>`<line x1="6" y1="8" x2="42" y2="24" stroke="${c}" stroke-width="2"/>`,
+  kara_hav:   c=>`<path d="M6 9 L24 16 L6 25 Z" stroke="${c}" stroke-width="2" fill="none"/><path d="M42 9 L24 16 L42 25 Z" stroke="${c}" stroke-width="2" fill="none"/>`,
+  sihhiye:    c=>`<path d="M10 10 Q24 27 38 10" stroke="${c}" stroke-width="2.2" fill="none"/>`,
+  ulastirma:  c=>`<circle cx="24" cy="16" r="10" stroke="${c}" stroke-width="1.8" fill="none"/><line x1="14" y1="16" x2="34" y2="16" stroke="${c}" stroke-width="1.2"/><line x1="24" y1="7" x2="24" y2="25" stroke="${c}" stroke-width="1.2"/>`,
+
+  istihbarat: c=>`<text x="24" y="20" text-anchor="middle" font-size="10" fill="${c}" font-family="Courier New" font-weight="bold">İST</text>`,
+  tanksavar:  c=>`<path d="M6 26 Q24 4 42 26" stroke="${c}" stroke-width="2" fill="none"/><line x1="24" y1="4" x2="24" y2="26" stroke="${c}" stroke-width="1.5"/>`,
+  havahucum:  c=>`<path d="M7 24 L24 8 L41 24" stroke="${c}" stroke-width="2" fill="none"/>`,
+  iha:        c=>`<path d="M9 20 L24 8 L39 20" stroke="${c}" stroke-width="1.5" fill="none"/><line x1="17" y1="17" x2="31" y2="17" stroke="${c}" stroke-width="1.2"/>`,
+  ok_brl:     c=>`<line x1="6" y1="8" x2="42" y2="24" stroke="${c}" stroke-width="2"/><line x1="42" y1="8" x2="6" y2="24" stroke="${c}" stroke-width="2"/><text x="24" y="20" text-anchor="middle" font-size="8" fill="${c}" font-family="Courier New">ÖK</text>`,
+  denizpiy:   c=>`<line x1="6" y1="8" x2="42" y2="24" stroke="${c}" stroke-width="2"/><line x1="42" y1="8" x2="6" y2="24" stroke="${c}" stroke-width="2"/><line x1="6" y1="26" x2="42" y2="26" stroke="${c}" stroke-width="2"/>`,
+  amfibi:     c=>`<path d="M5 22 Q10 10 16 16 Q20 22 24 10 Q28 -2 32 10 Q36 22 42 14" stroke="${c}" stroke-width="2" fill="none"/>`,
+};
+const WPN={
+  topcu_sil: c=>`<circle cx="14" cy="22" r="6" stroke="${c}" stroke-width="1.8" fill="none"/><line x1="14" y1="22" x2="42" y2="10" stroke="${c}" stroke-width="2"/>`,
+  havan:     c=>`<line x1="24" y1="28" x2="24" y2="8" stroke="${c}" stroke-width="2.5"/><line x1="14" y1="26" x2="34" y2="26" stroke="${c}" stroke-width="2"/><line x1="10" y1="28" x2="20" y2="22" stroke="${c}" stroke-width="1.5"/><line x1="38" y1="28" x2="28" y2="22" stroke="${c}" stroke-width="1.5"/>`,
+  tank_sil:  c=>`<rect x="8" y="12" width="20" height="8" stroke="${c}" stroke-width="1.5" fill="${c}" fill-opacity=".3"/><line x1="28" y1="16" x2="44" y2="11" stroke="${c}" stroke-width="2.5"/><circle cx="12" cy="22" r="4" stroke="${c}" stroke-width="1.5" fill="none"/><circle cx="24" cy="22" r="4" stroke="${c}" stroke-width="1.5" fill="none"/>`,
+  roket:     c=>`<line x1="6" y1="16" x2="32" y2="16" stroke="${c}" stroke-width="2"/><path d="M28 10 L42 16 L28 22 Z" fill="${c}"/><line x1="10" y1="10" x2="10" y2="22" stroke="${c}" stroke-width="1.5"/><line x1="17" y1="10" x2="17" y2="22" stroke="${c}" stroke-width="1.5"/>`,
+  ucaksavar: c=>`<line x1="24" y1="28" x2="24" y2="6" stroke="${c}" stroke-width="2"/><path d="M16 14 L32 14" stroke="${c}" stroke-width="1.5"/><path d="M12 20 L36 20" stroke="${c}" stroke-width="1.5"/>`,
+  mayin:     c=>`<text x="24" y="18" text-anchor="middle" font-size="11" fill="${c}" font-family="Courier New" font-weight="bold">M</text><line x1="6" y1="24" x2="42" y2="24" stroke="${c}" stroke-width="1.5" stroke-dasharray="3,3"/>`,
+};
+const SHP={
+  kare:       (c,w)=>`<rect x="6" y="4" width="24" height="24" stroke="${c}" stroke-width="${w}" fill="none"/>`,
+  dikdrt:     (c,w)=>`<rect x="4" y="8" width="40" height="16" stroke="${c}" stroke-width="${w}" fill="none"/>`,
+  ucgen:      (c,w)=>`<path d="M24 4 L42 28 L6 28 Z" stroke="${c}" stroke-width="${w}" fill="none" stroke-linejoin="round"/>`,
+  ucgen_ters: (c,w)=>`<path d="M6 4 L42 4 L24 28 Z" stroke="${c}" stroke-width="${w}" fill="none" stroke-linejoin="round"/>`,
+  daire:      (c,w)=>`<circle cx="24" cy="16" r="12" stroke="${c}" stroke-width="${w}" fill="none"/>`,
+  baklava:    (c,w)=>`<path d="M24 3 L40 16 L24 29 L8 16 Z" stroke="${c}" stroke-width="${w}" fill="none" stroke-linejoin="round"/>`,
+  ok:         (c,w)=>`<line x1="4" y1="16" x2="36" y2="16" stroke="${c}" stroke-width="${w}"/><path d="M30 8 L44 16 L30 24" stroke="${c}" stroke-width="${w}" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`,
+  yildiz:     (c,w)=>`<path d="M24 3 L28 13 L39 13 L30 20 L33 30 L24 24 L15 30 L18 20 L9 13 L20 13 Z" stroke="${c}" stroke-width="${w}" fill="none" stroke-linejoin="round"/>`,
+  arti:       (c,w)=>`<line x1="24" y1="5" x2="24" y2="27" stroke="${c}" stroke-width="${w}"/><line x1="10" y1="16" x2="38" y2="16" stroke="${c}" stroke-width="${w}"/>`,
+  cizgi:      (c,w)=>`<line x1="4" y1="16" x2="44" y2="16" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`,
+  cizgi_kesik:(c,w)=>`<line x1="4" y1="16" x2="44" y2="16" stroke="${c}" stroke-width="${w}" stroke-dasharray="6,4" stroke-linecap="round"/>`,
+};
+const ARR={
+  taarruz:   c=>`<line x1="4" y1="16" x2="36" y2="16" stroke="${c}" stroke-width="3.5"/><path d="M30 9 L44 16 L30 23 Z" fill="${c}"/>`,
+  cekilme:   c=>`<line x1="10" y1="16" x2="40" y2="16" stroke="${c}" stroke-width="2.5" stroke-dasharray="5,3"/><path d="M4 9 L18 16 L4 23 Z" fill="${c}"/>`,
+  intikal:   c=>`<line x1="6" y1="16" x2="34" y2="16" stroke="${c}" stroke-width="2.5"/><path d="M28 9 L42 16 L28 23 Z" fill="${c}"/><line x1="6" y1="10" x2="6" y2="22" stroke="${c}" stroke-width="2"/>`,
+  ikmal:     c=>`<line x1="4" y1="16" x2="36" y2="16" stroke="${c}" stroke-width="2" stroke-dasharray="6,3"/><path d="M30 10 L44 16 L30 22 Z" fill="${c}"/>`,
+  savunma:   c=>`<path d="M4 22 Q14 8 24 16 Q34 24 44 10" stroke="${c}" stroke-width="2.5" fill="none"/>`,
+};
+
+const MIL_SYMS={
+  'PİYADE / ÖZEL':[
+    {id:'piyade',lbl:'Piyade',br:'piyade'},
+    {id:'komando',lbl:'Komando',br:'komando'},
+    {id:'ok_brl',lbl:'Özel Kuv.',br:'ok_brl'},
+    {id:'denizpiy',lbl:'Deniz Piy.',br:'denizpiy'},
+    {id:'amfibi',lbl:'Amfibi',br:'amfibi'},
+    {id:'kesif',lbl:'Keşif',br:'kesif'},
+  ],
+  'MUHAREBE':[
+    {id:'tank',lbl:'Tank/Zırhlı',br:'tank'},
+    {id:'topcu',lbl:'Topçu',br:'topcu'},
+    {id:'havasav',lbl:'Hava Sav.',br:'havasav'},
+    {id:'tanksavar',lbl:'Tanksavar',br:'tanksavar'},
+    {id:'kara_hav',lbl:'Kara Hav.',br:'kara_hav'},
+    {id:'havahucum',lbl:'Hava Hücum',br:'havahucum'},
+    {id:'iha',lbl:'İHA',br:'iha'},
+  ],
+  'HİZMET DESTEK':[
+    {id:'muhabere',lbl:'Muhabere',br:'muhabere'},
+    {id:'istihkam',lbl:'İstihkam',br:'istihkam'},
+    {id:'sihhiye',lbl:'Sıhhiye',br:'sihhiye'},
+    {id:'ulastirma',lbl:'Ulaştırma',br:'ulastirma'},
+
+    {id:'istihbarat',lbl:'İstihbarat',br:'istihbarat'},
+  ],
+  'SİLAH / ARAÇ':[
+    {id:'topcu_sil',lbl:'Topçu Silahı',wpn:'topcu_sil'},
+    {id:'havan_sil',lbl:'Havan',wpn:'havan'},
+    {id:'tank_sil',lbl:'Tank',wpn:'tank_sil'},
+    {id:'roket_top',lbl:'Roket Topçu',wpn:'roket'},
+    {id:'ucaksavar',lbl:'Uçaksavar',wpn:'ucaksavar'},
+    {id:'mayin',lbl:'Mayın Tarlası',wpn:'mayin'},
+  ],
+  'BOŞ ŞEKİLLER':[
+    {id:'sh_kare',lbl:'Kare',shp:'kare'},
+    {id:'sh_dikdrt',lbl:'Dikdörtgen',shp:'dikdrt'},
+    {id:'sh_ucgen',lbl:'Üçgen',shp:'ucgen'},
+    {id:'sh_daire',lbl:'Daire',shp:'daire'},
+    {id:'sh_baklava',lbl:'Baklava',shp:'baklava'},
+    {id:'sh_ok',lbl:'Ok',shp:'ok'},
+    {id:'sh_yildiz',lbl:'Yıldız',shp:'yildiz'},
+    {id:'sh_arti',lbl:'Artı',shp:'arti'},
+    {id:'sh_ucgen_ters',lbl:'Ters Üçgen',shp:'ucgen_ters'},
+    {id:'sh_cizgi',lbl:'Düz Çizgi',shp:'cizgi'},
+    {id:'sh_cizgi_kesik',lbl:'Kesik Çizgi',shp:'cizgi_kesik'},
+  ],
+  'HAREKET / İSTİKAMET':[
+    {id:'taarruz',lbl:'Taarruz',arr:'taarruz'},
+    {id:'cekilme',lbl:'Çekilme',arr:'cekilme'},
+    {id:'intikal',lbl:'İntikal',arr:'intikal'},
+    {id:'ikmal',lbl:'İkmal Hattı',arr:'ikmal'},
+    {id:'savunma',lbl:'Savunma Hattı',arr:'savunma'},
+  ],
+};
+
+function scaleStroke(svg,lw){
+  const f=lw/2;
+  return svg.replace(/stroke-width="([\d.]+)"/g,(m,v)=>`stroke-width="${(parseFloat(v)*f).toFixed(2)}"`);
+}
+function mkSVG(sym,col,W=44,H=28,lw=2){
+  const cfg=NATO_CFG[col]||NATO_CFG.blue;
+  let inner;
+  if(sym.shp){const fn=SHP[sym.shp]||(_=>'');inner=fn(cfg.stroke,2);}
+  else if(sym.arr){const fn=ARR[sym.arr]||(_=>'');inner=fn(cfg.stroke,2);}
+  else if(sym.wpn){const fn=WPN[sym.wpn]||(_=>'');inner=fn(cfg.txt,2);}
+  else{const fn=BR[sym.br]||(_=>'');inner=natoBox(cfg.shape,cfg.fill,cfg.stroke,48,32,2)+fn(cfg.txt,2);}
+  inner=scaleStroke(inner,lw);
+  return`<svg viewBox="0 0 48 32" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+}
+
+function buildMilPanel(){
+  let html='';
+  Object.entries(MIL_SYMS).forEach(([cat,syms])=>{
+    html+=`<div class="mc-title">${cat}</div><div class="mg">`;
+    syms.forEach(s=>{
+      html+=`<div class="msb${selSymId===s.id?' on':''}" id="msb-${s.id}" onclick="selMilSym('${s.id}')"><div class="msb-svg">${mkSVG(s,milCol,42,26,milLineW)}</div><div class="msb-lbl">${s.lbl}</div></div>`;
+    });
+    html+='</div>';
+  });
+  document.getElementById('mil-syms').innerHTML=html;
+}
+
+// ═══════════════════════════════════════
+//  MAP INIT
+// ═══════════════════════════════════════
+const map=L.map('map',{center:[39,35],zoom:6,zoomControl:false,attributionControl:false,tap:true,tapTolerance:30});
+const BASES={
+  osm:  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}),
+  topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17}),
+  sat:  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19}),
+};
+const OVLS={hill:L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain-background/{z}/{x}/{y}.png',{maxZoom:18,opacity:.5})};
+let curBase='osm'; BASES.osm.addTo(map);
+
+// ═══════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════
+let mode='cursor',panelOpen=false,nightMode=false,coordFmt=0;
+let milCol='blue',milSz=100,milLineW=2,selSymId=null;
+let wpColor='#4a8040',wpCnt=1,editWPId=null,editMilId=null,editRteId=null;
+let wpItems=[],wpLayers=[];
+let milItems=[],milLayers=[];
+let areaItems=[],areaLayers=[],editAreaId=null;
+let areaPts=[],areaDraftMkrs=[],areaDraftLine=null,areaTmpLine=null,areaPreview=null;
+let curAreaType={id:'us',name:'ÜS BÖLGESİ',color:'#2a6ac0'};
+let msrPts=[],msrLine=null,msrTmpLine=null,msrMkrs=[];
+let brgPts=[],brgLine=null,brgLines=[];
+let rtePts=[],rteLine=null,rteMkrs=[],rteItems=[];
+let rngPendLL=null,rngLayers=[];
+let drawColor='#c8900a',isDrawing=false,drawPath=[],drawTmpLine=null,drawItems=[];
+let gpsActive=false,gpsWId=null,gpsMkr=null;
+let trkPts=[],trkLine=null,isTracking=false,trkStart=null,trkTimer=null;
+let savedTracks=[],historyLayers={};
+const TRK_COLORS=['#4a9040','#c8900a','#4080c0','#c05050','#9050c0','#50a0a0','#c08040','#6080a0'];
+let pendLL=null;
+let ovlSt={hill:false};
+
+const AREA_TYPES=[
+  {id:'us',    name:'ÜS BÖLGESİ',   color:'#2a6ac0',note:'Mavi — dost kuvvet'},
+  {id:'teh',   name:'TEHLİKE',       color:'#c84040',note:'Kırmızı — yasak bölge'},
+  {id:'nbc',   name:'KBRN ALANI',    color:'#c8c020',note:'Sarı — kimyasal/biyolojik/radyolojik/nükleer'},
+  {id:'top',   name:'TOPLANMA',      color:'#40a040',note:'Yeşil — toplanma noktası'},
+  {id:'ates',  name:'ATEŞ DESTEĞİ', color:'#c87020',note:'Turuncu — topçu sahası'},
+  {id:'serbest',name:'SERBEST BÖLGE',color:'#a040a0',note:'Mor — özel alan'},
+];
+
+function buildAreaTypes(){
+  document.getElementById('area-types').innerHTML=AREA_TYPES.map(t=>
+    `<div class="ai${t.id===curAreaType.id?' on':''}" id="at-${t.id}" onclick="selAreaType('${t.id}')"><div class="ac" style="background:${t.color}"></div><div class="ai-info"><div class="ai-n">${t.name}</div><div class="ai-d">${t.note}</div></div></div>`
+  ).join('');
+}
+function selAreaType(id){curAreaType=AREA_TYPES.find(t=>t.id===id)||curAreaType;document.querySelectorAll('.ai').forEach(e=>e.classList.remove('on'));document.getElementById('at-'+id)?.classList.add('on');}
+
+// ═══════════════════════════════════════
+//  MAP EVENTS
+// ═══════════════════════════════════════
+map.on('mousemove',e=>{
+  // Masaüstünde fare koordinatını göster (alt bar). Önizleme çizgileri artikıl/merkez bazlı 'move' eventinde.
+  updCoords(e.latlng.lat,e.latlng.lng);
+});
+
+map.on('click',e=>{
+  if(panelOpen){closePanel();return;}
+  switch(mode){
+    // Ölçüm, alan, istikamet, yol: tıklama nokta KOYMAZ — sadece artikıl + "NOKTA EKLE" butonu koyar
+    case 'measure': case 'area': case 'bearing': case 'route': break;
+    // Askeri ve waypoint: hem tıklama hem artikıl çalışır (kolaylık)
+    case 'military': if(selSymId)placeMil(e.latlng); break;
+    case 'waypoint': pendLL=e.latlng; openDlg('dlg-wp'); break;
+    case 'range':    rngPendLL=e.latlng;openDlg('dlg-range');setMode('cursor'); break;
+  }
+});
+
+map.on('dblclick',e=>{if(mode==='area'&&areaPts.length>=3){L.DomEvent.stopPropagation(e);finishArea();}});
+map.on('zoomend',()=>{document.getElementById('c-z').textContent=map.getZoom();updateScale();});
+
+// MOBİL: harita kaydırılırken merkez (artikıl) koordinatını ve canlı önizlemeyi güncelle
+map.on('move',()=>{
+  const c=map.getCenter();
+  updCoords(c.lat,c.lng);
+  // Canlı ölçüm — son noktadan merkeze (artikıl)
+  if(mode==='measure'&&msrPts.length>0){
+    const last=msrPts[msrPts.length-1];
+    if(msrTmpLine)map.removeLayer(msrTmpLine);
+    msrTmpLine=L.polyline([last,c],{color:'#c8900a',weight:1.5,dashArray:'4,4',opacity:.7}).addTo(map);
+    const seg=last.distanceTo(c);
+    let tot=0;for(let i=1;i<msrPts.length;i++)tot+=msrPts[i-1].distanceTo(msrPts[i]);
+    document.getElementById('m-tot').textContent=fmtD(tot+seg);
+    document.getElementById('m-seg').textContent=fmtD(seg);
+  }
+  // Canlı istikamet — ilk noktadan merkeze
+  if(mode==='bearing'&&brgPts.length===1){
+    if(brgLine)map.removeLayer(brgLine);
+    brgLine=L.polyline([brgPts[0],c],{color:'#c8900a',weight:1.5,dashArray:'4,4',opacity:.7}).addTo(map);
+    const dg=calcBrg(brgPts[0],c);
+    document.getElementById('b-deg').textContent=dg.toFixed(1)+'°';
+    document.getElementById('b-mil').textContent=Math.round(dg*6400/360)+' mil';
+    document.getElementById('b-dist').textContent=fmtD(brgPts[0].distanceTo(c));
+  }
+  // Canlı alan — son noktadan merkeze
+  if(mode==='area'&&areaPts.length>0){
+    if(areaTmpLine)map.removeLayer(areaTmpLine);
+    areaTmpLine=L.polyline([areaPts[areaPts.length-1],c],{color:curAreaType.color,weight:1.5,dashArray:'4,4',opacity:.7}).addTo(map);
+  }
+  // Canlı yol — başlangıçtan merkeze düz hat mesafesi
+  if(mode==='route'&&rtePts.length===1){
+    document.getElementById('r-status').textContent='Bitiş: '+fmtD(rtePts[0].distanceTo(c));
+  }
+});
+document.getElementById('c-z').textContent=map.getZoom(); updateScale();
+document.getElementById('xhair').classList.add('on'); // artikıl her zaman görünür
+updCoords(map.getCenter().lat, map.getCenter().lng); // başlangıç merkez koord
+
+// ═══════════════════════════════════════
+//  COORDINATES
+// ═══════════════════════════════════════
+function updCoords(lat,lng){
+  if(coordFmt===0){document.getElementById('c-lat').textContent=lat.toFixed(5);document.getElementById('c-lon').textContent=lng.toFixed(5);}
+  else if(coordFmt===1){document.getElementById('c-lat').textContent=toDMS(lat,'NS');document.getElementById('c-lon').textContent=toDMS(lng,'EW');}
+  else{document.getElementById('c-lat').textContent=lat.toFixed(4);document.getElementById('c-lon').textContent=lng.toFixed(4);}
+  try{const m=window.mgrs?mgrs.forward([lng,lat],5):'—';document.getElementById('c-mgrs').textContent=m;
+    // Toolbar MGRS güncellemesi
+    document.getElementById('tb-mgrs-val').textContent=m;
+    document.getElementById('tb-lat-val').textContent=lat.toFixed(4);
+    document.getElementById('tb-lon-val').textContent=lng.toFixed(4);
+  }catch(e){document.getElementById('c-mgrs').textContent='—';}
+}
+function toDMS(d,dirs){const a=Math.abs(d),D=Math.floor(a),M=Math.floor((a-D)*60),S=((a-D-M/60)*3600).toFixed(1);return`${D}°${M}'${S}"${d>=0?dirs[0]:dirs[1]}`;}
+function cycleCoord(){coordFmt=(coordFmt+1)%3;notify(['DD','DMS','MGRS'][coordFmt]+' FORMAT');}
+function toMGRS(lat,lng){try{return window.mgrs?mgrs.forward([lng,lat],5):'—';}catch(e){return'—';}}
+
+// ═══════════════════════════════════════
+//  PANEL
+// ═══════════════════════════════════════
+function togglePanel(){panelOpen?closePanel():openPanel();}
+function openPanel(){
+  panelOpen=true;
+  document.getElementById('panel').classList.add('on');
+  document.getElementById('pbd').classList.add('on');
+  document.body.classList.add('panel-open');
+  document.getElementById('menu-ico').innerHTML='<line x1="3" y1="3" x2="19" y2="19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="19" y1="3" x2="3" y2="19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>';
+}
+function closePanel(){
+  panelOpen=false;
+  document.getElementById('panel').classList.remove('on');
+  document.getElementById('pbd').classList.remove('on');
+  document.body.classList.remove('panel-open');
+  document.getElementById('menu-ico').innerHTML='<rect x="3" y="5" width="16" height="2.5" rx=".5"/><rect x="3" y="10" width="16" height="2.5" rx=".5"/><rect x="3" y="15" width="16" height="2.5" rx=".5"/>';
+}
+function swTab(name,el){document.querySelectorAll('.tp').forEach(p=>p.classList.remove('on'));document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('on'));document.getElementById('tab-'+name).classList.add('on');if(el)el.classList.add('on');if(name==='import')updateExportSummary();}
+function openMilPanel(){openPanel();swTab('mil');document.querySelectorAll('.ptab')[3].classList.add('on');}
+
+// ═══════════════════════════════════════
+//  MODE MANAGEMENT
+// ═══════════════════════════════════════
+function setMode(m){
+  if(mode==='bearing'){if(brgLine){map.removeLayer(brgLine);brgLine=null;}brgPts=[];}
+  if(mode==='area')clearAreaDraft();
+  if(mode==='route'&&rtePts.length===1){rteMkrs.forEach(mk=>map.removeLayer(mk));rteMkrs=[];rtePts=[];}
+  mode=m;
+  document.querySelectorAll('.tb[id^="tb-"]').forEach(b=>b.classList.remove('on'));
+  const bmap={waypoint:'tb-wp',military:'tb-mil',measure:'tb-msr',bearing:'tb-brg',area:'tb-area',route:'tb-rte',range:'tb-rng',draw:'tb-draw'};
+  if(bmap[m])document.getElementById(bmap[m])?.classList.add('on');
+  syncToolBtns(m);
+  map.getContainer().style.cursor=(m==='cursor')?'':'crosshair';
+  // Serbest çizim modunda harita kaydırmayı kapat
+  if(m==='draw'){map.dragging.disable();document.getElementById('draw-bar').style.display='flex';}
+  else{map.dragging.enable();document.getElementById('draw-bar').style.display='none';if(isDrawing){isDrawing=false;if(drawTmpLine){drawItems.push(drawTmpLine);drawTmpLine=null;}}}
+  document.getElementById('xhair').classList.add('on');
+  const xbtn=document.getElementById('xhair-btn');xbtn.style.display=['measure','bearing','area','waypoint','route'].includes(m)?'flex':'none';updXhairBtn(m);
+  // çizim modunda artikıl gizli (serbest çizim parmakla)
+  if(m==='draw')document.getElementById('xhair').classList.remove('on');else document.getElementById('xhair').classList.add('on');
+  const labels={measure:'ÖLÇÜM — Artikılı getir, NOKTA EKLE bas',bearing:'İSTİKAMET — Artikılı 1.noktaya getir',
+                waypoint:'NOKTA MODU — Tıkla veya NOKTA EKLE',military:'ASKERİ — Sembol seç → haritaya tıkla',
+                area:'ALAN — Artikılı getir, NOKTA EKLE bas',route:'YOL — Artikılı başlangıca getir',
+                range:'MENZİL — Merkeze tıkla'};
+  const mb=document.getElementById('mbar');
+  if(m!=='cursor'&&labels[m]){mb.textContent=labels[m];mb.classList.add('on');}else mb.classList.remove('on');
+  document.getElementById('m-info').classList.toggle('on',m==='measure');
+  document.getElementById('b-info').classList.toggle('on',m==='bearing');
+  document.getElementById('a-info').classList.toggle('on',m==='area');
+  document.getElementById('r-info').classList.toggle('on',m==='route');
+}
+
+// ═══════════════════════════════════════
+//  LAYERS
+// ═══════════════════════════════════════
+function setBase(n){if(n===curBase)return;map.removeLayer(BASES[curBase]);BASES[n].addTo(map);curBase=n;document.querySelectorAll('[id^="lyr-"]').forEach(e=>e.classList.remove('on'));document.getElementById('lyr-'+n).classList.add('on');notify('HARİTA: '+n.toUpperCase());}
+function togOvl(n){ovlSt[n]=!ovlSt[n];const el=document.getElementById('lyr-'+n),op=document.getElementById(n+'-op');if(ovlSt[n]){OVLS[n].addTo(map);el.classList.add('on');if(op)op.style.display='flex';}else{map.removeLayer(OVLS[n]);el.classList.remove('on');if(op)op.style.display='none';}}
+function setOvlOp(n,v){OVLS[n].setOpacity(v/100);document.getElementById(n+'-v').textContent=v+'%';}
+
+// ═══════════════════════════════════════
+//  GPS & TRACK
+// ═══════════════════════════════════════
+function startGPS(){
+  if(!navigator.geolocation){notify('GPS YOK');return;}
+  const led=document.getElementById('gps-led'),txt=document.getElementById('gps-txt');
+  led.className='led srch';txt.textContent='ARANIYOR';
+  if(gpsWId)navigator.geolocation.clearWatch(gpsWId);
+  gpsWId=navigator.geolocation.watchPosition(pos=>{
+    const{latitude:la,longitude:lo,accuracy:ac}=pos.coords;gpsActive=true;led.className='led on';txt.textContent=`±${Math.round(ac)}m`;
+    if(!gpsMkr)gpsMkr=L.circleMarker([la,lo],{radius:9,color:'#4a8040',fillColor:'#90c080',fillOpacity:.9,weight:2}).addTo(map);
+    else gpsMkr.setLatLng([la,lo]);
+    if(isTracking){trkPts.push([la,lo]);updTrkLine();updTrkStats();}
+  },err=>{led.className='led';txt.textContent='HATA';notify('GPS: '+err.message);},{enableHighAccuracy:true,maximumAge:2000,timeout:12000});
+}
+function locateMe(){
+  if(!gpsActive){startGPS();notify('GPS BAŞLATILIYOR...');return;}
+  if(gpsMkr)map.flyTo(gpsMkr.getLatLng(),Math.max(map.getZoom(),16),{duration:1});
+}
+function toggleTrack(){
+  isTracking=!isTracking;const btn=document.getElementById('tb-trk'),tg=document.getElementById('tg-trk');
+  if(isTracking){if(!gpsActive)startGPS();trkStart=Date.now();trkTimer=setInterval(updTrkTime,1000);btn.classList.add('on');btn.innerHTML='<span class="rec"></span> KAYIT';if(tg)tg.textContent='◉ İZ KAYDI DURDUR';notify('İZ KAYDI BAŞLADI');}
+  else{
+    clearInterval(trkTimer);btn.classList.remove('on');btn.textContent='İZ';if(tg)tg.textContent='◎ İZ KAYDI BAŞLAT/DURDUR';
+    if(trkPts.length>1)saveTrackToHistory();
+    notify('İZ DURDU');
+  }
+}
+function saveTrackToHistory(){
+  let dist=0;
+  for(let i=1;i<trkPts.length;i++)dist+=L.latLng(trkPts[i-1]).distanceTo(L.latLng(trkPts[i]));
+  const dur=trkStart?Math.floor((Date.now()-trkStart)/1000):0;
+  const id='trk_'+Date.now();
+  const color=TRK_COLORS[savedTracks.length%TRK_COLORS.length];
+  const entry={id,date:Date.now(),points:[...trkPts],dist,dur,color,visible:false};
+  savedTracks.unshift(entry);
+  persistData();
+  renderTrackHistory();
+}
+function renderTrackHistory(){
+  const el=document.getElementById('trk-history');
+  if(!el)return;
+  if(!savedTracks.length){el.innerHTML='<div style="font-size:.58rem;color:var(--mu);text-align:center;padding:10px 0">Kayıt yok</div>';return;}
+  el.innerHTML=savedTracks.map((t,i)=>{
+    const d=new Date(t.date);
+    const dateStr=d.toLocaleDateString('tr-TR',{day:'2-digit',month:'2-digit',year:'2-digit'})+' '+d.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'});
+    const distStr=(t.dist/1000).toFixed(2)+' km';
+    const durStr=String(Math.floor(t.dur/60)).padStart(2,'0')+':'+String(t.dur%60).padStart(2,'0');
+    const visIcon=t.visible?'◉':'◎';
+    return `<div style="display:flex;align-items:center;gap:6px;padding:7px 4px;border-bottom:1px solid var(--g1)">
+      <div style="width:10px;height:10px;border-radius:50%;background:${t.color};flex-shrink:0;border:1px solid rgba(255,255,255,.2)"></div>
+      <div style="flex:1;min-width:0;cursor:pointer" onclick="toggleHistoryLayer('${t.id}')">
+        <div style="font-family:var(--fm);font-size:.62rem;font-weight:700;color:${t.visible?t.color:'var(--tx)'}">${visIcon} ${dateStr}</div>
+        <div style="font-size:.54rem;color:var(--mu)">${distStr} · ${durStr} · ${t.points.length} nokta</div>
+      </div>
+      <button onclick="flyToHistory('${t.id}')" style="background:transparent;border:1px solid var(--g1);color:var(--mu);font-size:.7rem;padding:3px 6px;cursor:pointer;flex-shrink:0" title="Haritada göster">⊙</button>
+      <button onclick="exportHistoryTrack('${t.id}')" style="background:transparent;border:1px solid var(--g1);color:var(--mu);font-size:.7rem;padding:3px 6px;cursor:pointer;flex-shrink:0" title="GPX indir">↓</button>
+      <button onclick="deleteHistoryTrack('${t.id}')" style="background:transparent;border:1px solid var(--rd2);color:var(--rd2);font-size:.7rem;padding:3px 6px;cursor:pointer;flex-shrink:0">✕</button>
+    </div>`;
+  }).join('');
+}
+function toggleHistoryLayer(id){
+  const t=savedTracks.find(x=>x.id===id);if(!t)return;
+  t.visible=!t.visible;
+  if(t.visible){
+    if(historyLayers[id])map.removeLayer(historyLayers[id]);
+    historyLayers[id]=L.polyline(t.points,{color:t.color,weight:3,opacity:.85,dashArray:'6,3'}).addTo(map);
+  } else {
+    if(historyLayers[id]){map.removeLayer(historyLayers[id]);delete historyLayers[id];}
+  }
+  renderTrackHistory();
+}
+function flyToHistory(id){
+  const t=savedTracks.find(x=>x.id===id);if(!t||t.points.length<2)return;
+  if(!t.visible)toggleHistoryLayer(id);
+  map.flyToBounds(L.polyline(t.points).getBounds(),{padding:[30,30],duration:1});
+}
+function exportHistoryTrack(id){
+  const t=savedTracks.find(x=>x.id===id);if(!t)return;
+  let g=`<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="KomandoNav">\n  <trk><name>KomandoNav İz ${new Date(t.date).toLocaleDateString('tr-TR')}</name><trkseg>\n`;
+  t.points.forEach(([la,lo])=>{g+=`    <trkpt lat="${la.toFixed(6)}" lon="${lo.toFixed(6)}"/>\n`;});
+  g+='  </trkseg></trk>\n</gpx>';
+  dlFile('komando_iz_'+t.id+'.gpx',g,'application/gpx+xml');notify('GPX İNDİRİLDİ');
+}
+function deleteHistoryTrack(id){
+  if(historyLayers[id]){map.removeLayer(historyLayers[id]);delete historyLayers[id];}
+  savedTracks=savedTracks.filter(x=>x.id!==id);
+  persistData();renderTrackHistory();notify('KAYIT SİLİNDİ');
+}
+function updTrkLine(){if(trkLine)map.removeLayer(trkLine);if(trkPts.length>1)trkLine=L.polyline(trkPts,{color:'#4a8040',weight:3,opacity:.9}).addTo(map);}
+function updTrkStats(){document.getElementById('st-p').textContent=trkPts.length;if(trkPts.length>1){let d=0;for(let i=1;i<trkPts.length;i++)d+=L.latLng(trkPts[i-1]).distanceTo(L.latLng(trkPts[i]));document.getElementById('st-d').textContent=(d/1000).toFixed(2)+' km';}drawProf();}
+function updTrkTime(){if(!trkStart)return;const s=Math.floor((Date.now()-trkStart)/1000);document.getElementById('st-t').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
+function drawProf(){const c=document.getElementById('prof-c'),ctx=c.getContext('2d');c.width=c.offsetWidth*devicePixelRatio;c.height=c.offsetHeight*devicePixelRatio;ctx.scale(devicePixelRatio,devicePixelRatio);const w=c.offsetWidth,h=c.offsetHeight;ctx.fillStyle='#060a06';ctx.fillRect(0,0,w,h);if(trkPts.length<2){ctx.fillStyle='#4a6a48';ctx.font='8px Courier New';ctx.textAlign='center';ctx.fillText('VERİ YOK',w/2,h/2+3);return;}const el=trkPts.map((_,i)=>500+200*Math.sin(i*.3)+50*Math.sin(i*.7));const mn=Math.min(...el),mx=Math.max(...el),rg=mx-mn||1;ctx.beginPath();el.forEach((e,i)=>{const x=(i/(el.length-1))*w,y=h-((e-mn)/rg)*(h-4)-2;i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});ctx.lineTo(w,h);ctx.lineTo(0,h);ctx.closePath();const g=ctx.createLinearGradient(0,0,0,h);g.addColorStop(0,'rgba(74,128,64,.4)');g.addColorStop(1,'rgba(74,128,64,.02)');ctx.fillStyle=g;ctx.fill();ctx.beginPath();el.forEach((e,i)=>{const x=(i/(el.length-1))*w,y=h-((e-mn)/rg)*(h-4)-2;i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});ctx.strokeStyle='#4a8040';ctx.lineWidth=1.5;ctx.stroke();}
+function clearTrack(){trkPts=[];if(trkLine){map.removeLayer(trkLine);trkLine=null;}isTracking=false;clearInterval(trkTimer);document.getElementById('tb-trk').textContent='İZ';['st-d','st-t','st-p','st-s'].forEach(id=>document.getElementById(id).textContent=id==='st-d'?'0.00 km':id==='st-t'?'00:00':'0');drawProf();notify('İZ TEMİZLENDİ');persistData();}
+function exportTrack(){if(trkPts.length<2){notify('İZ YOK!');return;}let g=`<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="KomandoNav">\n  <trk><name>KomandoNav İz</name><trkseg>\n`;trkPts.forEach(([la,lo])=>{g+=`    <trkpt lat="${la.toFixed(6)}" lon="${lo.toFixed(6)}"/>\n`;});g+='  </trkseg></trk>\n</gpx>';dlFile('komando_iz.gpx',g,'application/gpx+xml');notify('GPX İNDİRİLDİ');}
+
+// ═══════════════════════════════════════
+//  MEASUREMENT
+// ═══════════════════════════════════════
+function toggleMeasure(){if(mode==='measure'){cancelMeasure();}else{resetMsr();setMode('measure');}}
+function resetMsr(){msrPts=[];msrMkrs.forEach(m=>map.removeLayer(m));msrMkrs=[];if(msrLine){map.removeLayer(msrLine);msrLine=null;}if(msrTmpLine){map.removeLayer(msrTmpLine);msrTmpLine=null;}document.getElementById('m-tot').textContent='0 m';document.getElementById('m-seg').textContent='—';}
+function addMsrPt(ll){msrPts.push(ll);msrMkrs.push(L.circleMarker(ll,{radius:4,color:'#c8900a',fillColor:'#c8900a',fillOpacity:1,weight:1}).addTo(map));if(msrLine)map.removeLayer(msrLine);if(msrPts.length>1)msrLine=L.polyline(msrPts,{color:'#c8900a',weight:2,dashArray:'5,4',opacity:.9}).addTo(map);let tot=0;for(let i=1;i<msrPts.length;i++)tot+=msrPts[i-1].distanceTo(msrPts[i]);document.getElementById('m-tot').textContent=fmtD(tot);}
+function finishMeasure(){
+  if(msrPts.length<2){notify('EN AZ 2 NOKTA!');return;}
+  let tot=0;
+  const segs=[];
+  for(let i=1;i<msrPts.length;i++){
+    const d=msrPts[i-1].distanceTo(msrPts[i]);
+    tot+=d;segs.push(fmtD(d));
+  }
+  // Çizgiyi kaydet (sarı), haritada bırak, popup ekle
+  if(msrLine){
+    msrLine.setStyle({color:'#e8b030',weight:2.5,dashArray:null,opacity:1});
+    const segTxt=segs.length>1?`<br><span style="font-size:10px;color:#888">Parçalar: ${segs.join(' + ')}</span>`:'';
+    msrLine.bindPopup(
+      `<b style="font-family:monospace;font-size:13px;color:#e8b030">⟵ ${fmtD(tot)} ⟶</b>${segTxt}`,
+      {className:'nato-pop'}
+    );
+  }
+  if(msrTmpLine){map.removeLayer(msrTmpLine);msrTmpLine=null;}
+  msrMkrs.forEach(m=>map.removeLayer(m));
+  msrPts=[];msrMkrs=[];msrLine=null;msrTmpLine=null;
+  notify('ÖLÇÜM KAYDEDİLDİ: '+fmtD(tot));
+  setMode('cursor');
+}
+function cancelMeasure(){resetMsr();setMode('cursor');notify('ÖLÇÜM İPTAL');}
+function clearBearing(){brgLines.forEach(l=>map.removeLayer(l));brgLines=[];if(brgLine){map.removeLayer(brgLine);brgLine=null;}brgPts=[];notify('İSTİKAMET TEMİZLENDİ');}
+
+// ═══════════════════════════════════════
+//  BEARING
+// ═══════════════════════════════════════
+function addBrgPt(ll){
+  if(brgPts.length===0){brgPts=[ll];document.getElementById('mbar').textContent='İSTİKAMET — 2.nokta seç';notify('2.NOKTAYA TIKLA');}
+  else{brgPts.push(ll);if(brgLine)map.removeLayer(brgLine);brgLine=null;
+    const finLine=L.polyline(brgPts,{color:'#c8900a',weight:2,opacity:.85}).addTo(map);
+    brgLines.push(finLine);
+    const deg=calcBrg(brgPts[0],brgPts[1]),dist=brgPts[0].distanceTo(brgPts[1]);
+    const mil=Math.round(deg*6400/360);
+    document.getElementById('b-deg').textContent=deg.toFixed(2)+'°';
+    document.getElementById('b-mil').textContent=mil+' mil';
+    document.getElementById('b-dist').textContent=fmtD(dist);
+    notify(`İSTİKAMET: ${deg.toFixed(1)}° / ${mil} mil / ${fmtD(dist)}`);
+    brgPts=[];document.getElementById('mbar').textContent='İSTİKAMET — 1.nokta seç';}
+}
+function addAtCenter(){
+  const c=map.getCenter();
+  if(mode==='measure') addMsrPt(c);
+  else if(mode==='bearing') addBrgPt(c);
+  else if(mode==='area') addAreaPt(c);
+  else if(mode==='route') addRtePt(c);
+  else if(mode==='waypoint'){pendLL=c;openDlg('dlg-wp');}
+}
+function updXhairBtn(m){
+  const btn=document.getElementById('xhair-btn');
+  const labels={measure:'+ NOKTA EKLE',bearing:'+ İSTİKAMET NOKTASI',area:'+ ALAN NOKTASI',waypoint:'+ WAYPOINT EKLE',route:'+ YOL NOKTASI'};
+  if(labels[m])btn.textContent=labels[m];
+}
+function calcBrg(l1,l2){const a=l1.lat*Math.PI/180,b=l2.lat*Math.PI/180,c=(l2.lng-l1.lng)*Math.PI/180;return(Math.atan2(Math.sin(c)*Math.cos(b),Math.cos(a)*Math.sin(b)-Math.sin(a)*Math.cos(b)*Math.cos(c))*180/Math.PI+360)%360;}
+
+// ═══════════════════════════════════════
+//  AREA
+// ═══════════════════════════════════════
+function addAreaPt(ll){
+  if(areaPts.length>0&&areaPts[0].distanceTo(ll)<25&&areaPts.length>=3){finishArea();return;}
+  areaPts.push(ll);
+  areaDraftMkrs.push(L.circleMarker(ll,{radius:5,color:curAreaType.color,fillColor:curAreaType.color,fillOpacity:1,weight:1}).addTo(map));
+  if(areaDraftLine)map.removeLayer(areaDraftLine);
+  areaDraftLine=L.polyline(areaPts,{color:curAreaType.color,weight:2,dashArray:'5,3',opacity:.9}).addTo(map);
+  document.getElementById('a-pts').textContent=areaPts.length;
+  if(areaPts.length>=3){if(areaPreview)map.removeLayer(areaPreview);areaPreview=L.polygon(areaPts,{color:curAreaType.color,fillColor:curAreaType.color,fillOpacity:.15,weight:1.5,dashArray:'5,3'}).addTo(map);}
+}
+function clearAreaDraft(){areaPts=[];areaDraftMkrs.forEach(m=>map.removeLayer(m));areaDraftMkrs=[];if(areaDraftLine){map.removeLayer(areaDraftLine);areaDraftLine=null;}if(areaTmpLine){map.removeLayer(areaTmpLine);areaTmpLine=null;}if(areaPreview){map.removeLayer(areaPreview);areaPreview=null;}}
+function polyAreaM2(pts){
+  // Küresel poligon alanı (m²)
+  const R=6378137;let a=0;const n=pts.length;
+  for(let i=0;i<n;i++){const p1=pts[i],p2=pts[(i+1)%n];
+    a+=(p2.lng-p1.lng)*Math.PI/180*(2+Math.sin(p1.lat*Math.PI/180)+Math.sin(p2.lat*Math.PI/180));}
+  return Math.abs(a*R*R/2);
+}
+function polyPerimM(pts){let p=0;for(let i=0;i<pts.length;i++)p+=pts[i].distanceTo(pts[(i+1)%pts.length]);return p;}
+function fmtArea(m2){return m2<1e6?`${Math.round(m2).toLocaleString('tr')} m²`:`${(m2/1e6).toFixed(2)} km²`;}
+function finishArea(){if(areaPts.length<3){notify('EN AZ 3 NOKTA!');return;}const pts=[...areaPts],type={...curAreaType};clearAreaDraft();document.getElementById('area-nm').value=type.name+' '+(areaItems.length+1);pendLL={_pts:pts,_type:type};openDlg('dlg-area');}
+function confirmArea(){
+  if(!pendLL||!pendLL._pts)return;
+  const name=document.getElementById('area-nm').value.trim()||pendLL._type.name;
+  const pts=pendLL._pts,type=pendLL._type;pendLL=null;
+  const area=polyAreaM2(pts),perim=polyPerimM(pts);
+  const poly=L.polygon(pts,{color:type.color,fillColor:type.color,fillOpacity:.2,weight:2}).addTo(map);
+  const id=Date.now();
+  poly.bindPopup(areaPop(id,name,type,area,perim));
+  areaItems.push({id,name,type,pts,area,perim,layer:poly});
+  areaLayers.push({id,layer:poly});
+  renderAreaList();closeDlg('dlg-area');setMode('cursor');
+  notify('ALAN: '+name+' / '+fmtArea(area));
+  persistData();
+}
+function areaPop(id,name,type,area,perim){
+  return`<div style="font-family:Courier New;font-size:11px;color:#060a06;min-width:150px"><b>${name}</b><br><span style="color:#4a6a48">${type.name}</span><br>Alan: ${fmtArea(area)}<br>Çevre: ${fmtD(perim)}<br><button class="pop-btn" onclick="openEditArea(${id})">✏ DÜZENLE</button></div>`;
+}
+function openEditArea(id){editAreaId=id;const a=areaItems.find(x=>x.id===id);if(!a)return;document.getElementById('area-ed-nm').value=a.name;openDlg('dlg-area-edit');}
+function saveAreaEdit(){const a=areaItems.find(x=>x.id===editAreaId);if(!a)return;a.name=document.getElementById('area-ed-nm').value.trim()||a.name;if(a.layer)a.layer.setPopupContent(areaPop(a.id,a.name,a.type,a.area,a.perim));renderAreaList();closeDlg('dlg-area-edit');notify('GÜNCELLENDİ: '+a.name);persistData();}
+function cancelArea(){clearAreaDraft();closeDlg('dlg-area');pendLL=null;setMode('cursor');}
+function renderAreaList(){const el=document.getElementById('area-list');if(!areaItems.length){el.innerHTML='<div class="empty-s"><div class="empty-t">Alan yok</div></div>';return;}el.innerHTML=areaItems.map(a=>`<div class="ai" onclick="zoomArea(${a.id})"><div class="ac" style="background:${a.type.color}"></div><div class="ai-info"><div class="ai-n">${a.name}</div><div class="ai-d">${a.type.name} · ${fmtArea(a.area)}</div></div><button class="ic" onclick="event.stopPropagation();openEditArea(${a.id})">✏</button><button class="ic del" onclick="event.stopPropagation();delArea(${a.id})">×</button></div>`).join('');}
+function zoomArea(id){const l=areaLayers.find(a=>a.id===id);if(l)map.fitBounds(l.layer.getBounds());}
+function delArea(id){const i=areaItems.findIndex(a=>a.id===id);if(i<0)return;areaItems.splice(i,1);const li=areaLayers.findIndex(a=>a.id===id);if(li>=0){map.removeLayer(areaLayers[li].layer);areaLayers.splice(li,1);}renderAreaList();persistData();}
+function clearAreas(){areaItems=[];areaLayers.forEach(a=>map.removeLayer(a.layer));areaLayers=[];renderAreaList();notify('TÜM ALANLAR SİLİNDİ');persistData();}
+
+// ═══════════════════════════════════════
+//  WAYPOINTS
+// ═══════════════════════════════════════
+function pickC(el){document.querySelectorAll('.co').forEach(e=>e.classList.remove('on'));el.classList.add('on');wpColor=el.dataset.c;}
+function saveWP(){if(!pendLL)return;const name=document.getElementById('wp-name').value.trim()||`WP-${String(wpCnt).padStart(3,'0')}`;const note=document.getElementById('wp-note').value.trim();const m=toMGRS(pendLL.lat,pendLL.lng);const id=Date.now();wpItems.push({id,name,note,color:wpColor,latlng:pendLL,mgrs:m});wpCnt++;const icon=L.divIcon({html:`<div style="width:14px;height:14px;background:${wpColor};border:2px solid rgba(0,0,0,.6);transform:rotate(45deg)"></div>`,iconSize:[14,14],iconAnchor:[7,7],className:''});const mk=L.marker(pendLL,{icon,draggable:true,autoPan:true}).addTo(map);mk.bindPopup(wpPop(id,name,note,pendLL,m));mk.on('dragend',()=>onWPDragEnd(id));wpLayers.push({id,marker:mk});renderWPList();closeDlg('dlg-wp');setMode('cursor');notify('NOKTA: '+name+' — sürükleyerek taşı');persistData();}
+function onWPDragEnd(id){const w=wpItems.find(x=>x.id===id),ml=wpLayers.find(x=>x.id===id);if(!w||!ml)return;const ll=ml.marker.getLatLng();w.latlng=ll;w.mgrs=toMGRS(ll.lat,ll.lng);ml.marker.setPopupContent(wpPop(w.id,w.name,w.note,w.latlng,w.mgrs));renderWPList();notify(w.name+' TAŞINDI');persistData();}
+function wpPop(id,name,note,ll,m){return`<div style="font-family:Courier New;font-size:11px;color:#060a06;min-width:150px"><b>${name}</b>${note?'<br>'+note:''}<br>${ll.lat.toFixed(5)}, ${ll.lng.toFixed(5)}<br>MGRS: ${m}<br><button class="pop-btn" onclick="openEditWP(${id})">✏ DÜZENLE</button></div>`;}
+function openEditWP(id){editWPId=id;const w=wpItems.find(x=>x.id===id);if(!w)return;document.getElementById('wpe-name').value=w.name;document.getElementById('wpe-note').value=w.note||'';openDlg('dlg-wp-edit');}
+function saveWPEdit(){const w=wpItems.find(x=>x.id===editWPId);if(!w)return;w.name=document.getElementById('wpe-name').value.trim()||w.name;w.note=document.getElementById('wpe-note').value.trim();const ml=wpLayers.find(x=>x.id===editWPId);if(ml)ml.marker.setPopupContent(wpPop(w.id,w.name,w.note,w.latlng,w.mgrs));renderWPList();closeDlg('dlg-wp-edit');notify('GÜNCELLENDİ: '+w.name);persistData();}
+function renderWPList(){const list=document.getElementById('wp-list'),empty=document.getElementById('wp-empty');if(!wpItems.length){list.innerHTML='';empty.style.display='block';return;}empty.style.display='none';list.innerHTML=wpItems.map(w=>`<div class="wi" onclick="flyTo(${w.latlng.lat},${w.latlng.lng},16,'${w.name}')"><div class="wc" style="background:${w.color}"></div><div class="wi-info"><div class="wn">${w.name}</div><div class="wco">${w.latlng.lat.toFixed(4)}, ${w.latlng.lng.toFixed(4)}</div></div><button class="ic" onclick="event.stopPropagation();openEditWP(${w.id})">✏</button><button class="ic del" onclick="event.stopPropagation();delWP(${w.id})">✕</button></div>`).join('');}
+function delWP(id){const i=wpItems.findIndex(w=>w.id===id);if(i<0)return;wpItems.splice(i,1);const mi=wpLayers.findIndex(m=>m.id===id);if(mi>=0){map.removeLayer(wpLayers[mi].marker);wpLayers.splice(mi,1);}renderWPList();notify('NOKTA SİLİNDİ');persistData();}
+function clearWP(){wpItems=[];wpLayers.forEach(m=>map.removeLayer(m.marker));wpLayers=[];renderWPList();notify('TÜM NOKTALAR SİLİNDİ');persistData();}
+function exportWP(){if(!wpItems.length){notify('NOKTA YOK!');return;}let g=`<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="KomandoNav">\n`;wpItems.forEach(w=>{g+=`  <wpt lat="${w.latlng.lat.toFixed(6)}" lon="${w.latlng.lng.toFixed(6)}">\n    <name>${w.name}</name>${w.note?'\n    <desc>'+w.note+'</desc>':''}\n  </wpt>\n`;});g+='</gpx>';dlFile('komando_noktalar.gpx',g,'application/gpx+xml');notify('GPX İNDİRİLDİ');}
+
+// ─── TOPLU DIŞA AKTARMA ─────────────────────────────────────
+function exportAll(){
+  const ts=new Date().toISOString().slice(0,16).replace('T','_').replace(':','');
+  let g=`<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="KomandoNav" xmlns:kn="https://komandonav.app">\n`;
+  // Waypoints
+  wpItems.forEach(w=>{
+    g+=`  <wpt lat="${w.latlng.lat.toFixed(6)}" lon="${w.latlng.lng.toFixed(6)}">\n`;
+    g+=`    <name>${w.name}</name>\n`;
+    if(w.note) g+=`    <desc>${w.note}</desc>\n`;
+    g+=`    <sym>Flag</sym>\n  </wpt>\n`;
+  });
+  // Military markers as waypoints
+  milItems.forEach(m=>{
+    if(!m.latlng) return;
+    g+=`  <wpt lat="${m.latlng.lat.toFixed(6)}" lon="${m.latlng.lng.toFixed(6)}">\n`;
+    g+=`    <name>[${m.color?.toUpperCase()||'MIL'}] ${m.name||m.id}</name>\n`;
+    if(m.note) g+=`    <desc>${m.note}</desc>\n`;
+    g+=`    <sym>Military</sym>\n  </wpt>\n`;
+  });
+  // Areas centroids
+  areaItems.forEach(a=>{
+    if(!a.pts||!a.pts.length) return;
+    const clat=a.pts.reduce((s,p)=>s+p[0],0)/a.pts.length;
+    const clon=a.pts.reduce((s,p)=>s+p[1],0)/a.pts.length;
+    g+=`  <wpt lat="${clat.toFixed(6)}" lon="${clon.toFixed(6)}">\n`;
+    g+=`    <name>[ALAN] ${a.name}</name>\n`;
+    g+=`    <desc>${a.type?.name||''} · ${fmtArea(a.area)}</desc>\n  </wpt>\n`;
+    // Area polygon as route
+    g+=`  <rte><name>${a.name}</name>\n`;
+    a.pts.forEach(p=>g+=`    <rtept lat="${p[0].toFixed(6)}" lon="${p[1].toFixed(6)}"/>\n`);
+    g+=`  </rte>\n`;
+  });
+  // Aktif iz
+  if(trkPts.length>1){
+    g+=`  <trk><name>KomandoNav İz (Aktif)</name><trkseg>\n`;
+    trkPts.forEach(([la,lo])=>g+=`    <trkpt lat="${la.toFixed(6)}" lon="${lo.toFixed(6)}"/>\n`);
+    g+=`  </trkseg></trk>\n`;
+  }
+  // Geçmiş izler
+  savedTracks.forEach((t,i)=>{
+    if(t.points.length<2) return;
+    const d=new Date(t.date).toLocaleDateString('tr-TR');
+    g+=`  <trk><name>KomandoNav İz ${i+1} (${d})</name><trkseg>\n`;
+    t.points.forEach(([la,lo])=>g+=`    <trkpt lat="${la.toFixed(6)}" lon="${lo.toFixed(6)}"/>\n`);
+    g+=`  </trkseg></trk>\n`;
+  });
+  g+='</gpx>';
+  dlFile(`komando_${ts}.gpx`,g,'application/gpx+xml');
+  notify('TOPLU GPX İNDİRİLDİ');
+  updateExportSummary();
+}
+
+function exportAllJSON(){
+  const ts=new Date().toISOString().slice(0,16).replace('T','_').replace(':','');
+  const data={
+    meta:{exported:new Date().toISOString(),creator:'KomandoNav'},
+    waypoints:wpItems.map(w=>({name:w.name,note:w.note||'',lat:w.latlng.lat,lon:w.latlng.lng,color:w.color})),
+    military:milItems.map(m=>({id:m.id,name:m.name||'',note:m.note||'',color:m.color,lat:m.latlng?.lat,lon:m.latlng?.lng})),
+    areas:areaItems.map(a=>({name:a.name,type:a.type?.name,color:a.type?.color,area_m2:a.area,pts:a.pts})),
+    track:{points:trkPts,recording:isTracking},
+    trackHistory:savedTracks.map(t=>({date:t.date,dist:t.dist,dur:t.dur,points:t.points,color:t.color}))
+  };
+  dlFile(`komando_${ts}.json`,JSON.stringify(data,null,2),'application/json');
+  notify('TOPLU JSON İNDİRİLDİ');
+}
+
+function exportMilJSON(){
+  if(!milItems.length){notify('ASKERİ İŞARET YOK!');return;}
+  dlFile('komando_askeri.json',JSON.stringify(milItems.map(m=>({id:m.id,name:m.name||'',note:m.note||'',color:m.color,lat:m.latlng?.lat,lon:m.latlng?.lng})),null,2),'application/json');
+  notify('ASKERİ JSON İNDİRİLDİ');
+}
+
+function exportAreasJSON(){
+  if(!areaItems.length){notify('ALAN YOK!');return;}
+  dlFile('komando_alanlar.json',JSON.stringify(areaItems.map(a=>({name:a.name,type:a.type?.name,color:a.type?.color,area_m2:a.area,pts:a.pts})),null,2),'application/json');
+  notify('ALANLAR JSON İNDİRİLDİ');
+}
+
+function updateExportSummary(){
+  const el=document.getElementById('export-summary');
+  if(!el) return;
+  const items=[
+    {k:'Waypoint',v:wpItems.length},
+    {k:'Askeri İşaret',v:milItems.length},
+    {k:'Alan',v:areaItems.length},
+    {k:'İz Noktası',v:trkPts.length},
+  ];
+  el.innerHTML=items.map(i=>`<div class="sb"><div class="sv" style="font-size:.9rem">${i.v}</div><div class="sk">${i.k}</div></div>`).join('');
+}
+
+// ═══════════════════════════════════════
+//  MILITARY
+// ═══════════════════════════════════════
+function setMilColor(c){milCol=c;document.querySelectorAll('.mcb').forEach(e=>e.classList.remove('on'));document.getElementById('mc-'+c).classList.add('on');buildMilPanel();notify({blue:'DOST',red:'DÜŞMAN',green:'TARAFSIZ',yellow:'BELİRSİZ'}[c]);}
+function selMilSym(id){document.querySelectorAll('.msb').forEach(b=>b.classList.remove('on'));if(selSymId===id){selSymId=null;setMode('cursor');notify('SEÇİM İPTAL');}else{selSymId=id;document.getElementById('msb-'+id)?.classList.add('on');setMode('military');closePanel();notify('SEMBOL SEÇİLDİ → HARİTAYA TIKLA');}}
+function findSym(id){for(const s of Object.values(MIL_SYMS)){const f=s.find(x=>x.id===id);if(f)return f;}return null;}
+function mkMilIcon(sym,col,sz,lw){const W=Math.round(52*(sz/100)),H=Math.round(36*(sz/100));return L.divIcon({html:`<div style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.6))">${mkSVG(sym,col,W,H,lw||2)}</div>`,iconAnchor:[W/2,H/2],className:'nato-mk'});}
+function placeMil(ll){
+  const sym=findSym(selSymId);if(!sym)return;
+  const id=Date.now()+Math.random();
+  const label=sym.lbl+' ['+NATO_CFG[milCol].lbl+']';
+  const m=toMGRS(ll.lat,ll.lng);
+  const mk=L.marker(ll,{icon:mkMilIcon(sym,milCol,milSz,milLineW),draggable:true,autoPan:true}).addTo(map);
+  mk.bindPopup(milPop(id,label,'',ll,m),{className:'nato-pop'});
+  mk.on('dragend',()=>onMilDragEnd(id));
+  milItems.push({id,label,note:'',ll,symId:selSymId,col:milCol,sz:milSz,lw:milLineW,sym,mgrs:m});
+  milLayers.push({id,marker:mk});
+  renderMilPlaced();setMode('cursor');selSymId=null;
+  document.querySelectorAll('.msb').forEach(b=>b.classList.remove('on'));
+  notify(sym.lbl+' YERLEŞTİRİLDİ — sürükleyerek taşıyabilirsin');
+  persistData();
+}
+function onMilDragEnd(id){
+  const it=milItems.find(x=>x.id===id);const ml=milLayers.find(x=>x.id===id);
+  if(!it||!ml)return;
+  const ll=ml.marker.getLatLng();
+  it.ll=ll;it.mgrs=toMGRS(ll.lat,ll.lng);
+  ml.marker.setPopupContent(milPop(it.id,it.label,it.note,it.ll,it.mgrs));
+  renderMilPlaced();
+  notify(it.label+' TAŞINDI');
+  persistData();
+}
+function milPop(id,label,note,ll,m){return`<div style="min-width:150px"><b>${label}</b>${note?'<br><span style="color:#4a6a48">'+note+'</span>':''}<br><span style="color:#4a6a48">${ll.lat.toFixed(5)}, ${ll.lng.toFixed(5)}</span><br><span style="color:#c8900a">MGRS: ${m}</span><br><button class="pop-btn" onclick="openEditMil(${id})">✏ DÜZENLE</button></div>`;}
+function openEditMil(id){editMilId=id;const m=milItems.find(x=>x.id===id);if(!m)return;document.getElementById('mile-name').value=m.label;document.getElementById('mile-note').value=m.note||'';document.getElementById('mile-sz').value=m.sz;document.getElementById('mile-szv').textContent=m.sz+'%';document.getElementById('mile-lw').value=m.lw||2;document.getElementById('mile-lwv').textContent=(m.lw||2)+'px';openDlg('dlg-mil-edit');}
+function saveMilEdit(){const m=milItems.find(x=>x.id===editMilId);if(!m)return;m.label=document.getElementById('mile-name').value.trim()||m.label;m.note=document.getElementById('mile-note').value.trim();const sz=+document.getElementById('mile-sz').value,lw=+document.getElementById('mile-lw').value;m.sz=sz;m.lw=lw;const ml=milLayers.find(x=>x.id===editMilId);if(ml){ml.marker.setIcon(mkMilIcon(m.sym,m.col,sz,lw));ml.marker.setPopupContent(milPop(m.id,m.label,m.note,m.ll,m.mgrs));}renderMilPlaced();closeDlg('dlg-mil-edit');notify('GÜNCELLENDİ: '+m.label);persistData();}
+function deleteMilDlg(){delMil(editMilId);closeDlg('dlg-mil-edit');}
+function renderMilPlaced(){const el=document.getElementById('mil-placed');if(!milItems.length){el.innerHTML='<div class="empty-s"><div class="empty-t">İşaret yok</div></div>';return;}el.innerHTML=milItems.map(m=>`<div class="mpi" onclick="map.panTo([${m.ll.lat},${m.ll.lng}])"><div style="flex:1;min-width:0"><div class="mpin">${m.label}</div><div class="mpic">${m.ll.lat.toFixed(4)}, ${m.ll.lng.toFixed(4)}</div></div><button class="ic" onclick="event.stopPropagation();openEditMil(${m.id})">✏</button><button class="ic del" onclick="event.stopPropagation();delMil(${m.id})">✕</button></div>`).join('');}
+function delMil(id){const i=milItems.findIndex(m=>m.id===id);if(i<0)return;milItems.splice(i,1);const mi=milLayers.findIndex(m=>m.id===id);if(mi>=0){map.removeLayer(milLayers[mi].marker);milLayers.splice(mi,1);}renderMilPlaced();notify('İŞARET SİLİNDİ');persistData();}
+function clearMil(){milItems=[];milLayers.forEach(m=>map.removeLayer(m.marker));milLayers=[];renderMilPlaced();notify('TÜM İŞARETLER SİLİNDİ');persistData();}
+
+// ═══════════════════════════════════════
+//  ROUTE
+// ═══════════════════════════════════════
+function addRtePt(ll){
+  if(rtePts.length===0){rtePts=[ll];rteMkrs.push(L.circleMarker(ll,{radius:7,color:'#2a6ac0',fillColor:'#2a6ac0',fillOpacity:.9,weight:2}).addTo(map));document.getElementById('r-status').textContent='Bitiş noktasına tıkla';notify('BİTİŞ NOKTASINA TIKLA');}
+  else{rtePts.push(ll);rteMkrs.push(L.circleMarker(ll,{radius:7,color:'#c84040',fillColor:'#c84040',fillOpacity:.9,weight:2}).addTo(map));fetchRoute(rtePts[0],rtePts[1]);rtePts=[];}
+}
+async function fetchRoute(s,e){
+  notify('YOL HESAPLANIYOR...');
+  try{
+    const r=await fetch(`https://router.project-osrm.org/route/v1/driving/${s.lng},${s.lat};${e.lng},${e.lat}?overview=full&geometries=geojson`);
+    const d=await r.json();
+    if(!d.routes||!d.routes[0]){notify('YOL BULUNAMADI');setMode('cursor');return;}
+    const ro=d.routes[0];
+    const coords=ro.geometry.coordinates.map(([lo,la])=>[la,lo]);
+    if(rteLine)map.removeLayer(rteLine);
+    rteLine=L.polyline(coords,{color:'#2a6ac0',weight:4,opacity:.9}).addTo(map);
+    const dist=(ro.distance/1000).toFixed(1),time=Math.round(ro.duration/60);
+    const rId=Date.now();rteItems.push({id:rId,name:`GÜZERGAH-${rteItems.length+1}`,dist,time});
+    rteLine.bindPopup(`<div style="font-family:Courier New;font-size:11px;color:#060a06"><b>GÜZERGAH ${rteItems.length}</b><br>${dist} km / ${time} dk<br><button class="pop-btn" onclick="openEditRte(${rId})">✏ İSİM</button><button class="pop-btn rd" onclick="clearRoute()">×</button></div>`);
+    map.fitBounds(rteLine.getBounds(),{padding:[30,30]});
+    document.getElementById('r-detail').style.display='';
+    document.getElementById('r-dist').textContent=dist+' km';
+    document.getElementById('r-time').textContent=time+' dk';
+    document.getElementById('r-status').textContent='✔ Çizgiye tıkla';
+    notify(`YOL: ${dist} km / ${time} dk`);setMode('cursor');
+  }catch(err){notify('YOL HATASI — İNTERNET?');setMode('cursor');}
+}
+function openEditRte(id){editRteId=id;const r=rteItems.find(x=>x.id===id);if(!r)return;document.getElementById('rte-name').value=r.name;openDlg('dlg-rte-edit');}
+function saveRteEdit(){const r=rteItems.find(x=>x.id===editRteId);if(!r)return;r.name=document.getElementById('rte-name').value.trim()||r.name;if(rteLine)rteLine.setPopupContent(`<div style="font-family:Courier New;font-size:11px;color:#060a06"><b>${r.name}</b><br>${r.dist} km / ${r.time} dk<br><button class="pop-btn" onclick="openEditRte(${r.id})">✏ İSİM</button><button class="pop-btn rd" onclick="clearRoute()">×</button></div>`);closeDlg('dlg-rte-edit');notify('GÜNCELLENDİ');}
+function clearRoute(){if(rteLine){map.removeLayer(rteLine);rteLine=null;}rteMkrs.forEach(m=>map.removeLayer(m));rteMkrs=[];rtePts=[];document.getElementById('r-detail').style.display='none';document.getElementById('r-status').textContent='Başlangıç noktasına tıkla';}
+
+// ═══════════════════════════════════════
+//  RANGE RINGS
+// ═══════════════════════════════════════
+function drawRings(){if(!rngPendLL)return;const vals=document.getElementById('rng-v').value.split(',').map(v=>parseFloat(v.trim())).filter(v=>!isNaN(v)&&v>0);if(!vals.length){notify('DEĞER GİR!');return;}const cols=['#4a8040','#c8900a','#c84040','#2a6ac0','#c8c020','#a040a0'];vals.forEach((km,i)=>{const c=L.circle(rngPendLL,{radius:km*1000,color:cols[i%6],fillOpacity:.03,weight:1.5,dashArray:'5,5'}).addTo(map);c.bindTooltip(`${km} km`,{permanent:true,direction:'top',offset:[0,-5]});rngLayers.push(c);});closeDlg('dlg-range');rngPendLL=null;notify(`${vals.length} MENZİL HALKASI ÇİZİLDİ`);}
+
+// ═══════════════════════════════════════
+//  GOTO
+// ═══════════════════════════════════════
+function flyTo(la,lo,z,name){map.flyTo([la,lo],z||12,{duration:1});if(name)notify('GİT: '+name.toUpperCase());}
+function gotoCoords(){const la=+document.getElementById('gt-lat').value,lo=+document.getElementById('gt-lon').value;if(isNaN(la)||isNaN(lo)){notify('KOORDİNAT GİR!');return;}flyTo(la,lo,14);}
+function gotoMGRS(){const v=document.getElementById('gt-mgrs').value.trim().toUpperCase().replace(/\s/g,'');if(!v){notify('MGRS GİR!');return;}try{const[lo,la]=mgrs.toPoint(v);flyTo(la,lo,14,v);}catch(e){notify('GEÇERSİZ MGRS!');}}
+function openGoto(){openDlg('dlg-goto');setTimeout(()=>document.getElementById('dg-lat').focus(),200);}
+function gotoGo(){const mv=document.getElementById('dg-mgrs').value.trim().toUpperCase().replace(/\s/g,'');if(mv.length>4){try{const[lo,la]=mgrs.toPoint(mv);closeDlg('dlg-goto');flyTo(la,lo,+document.getElementById('dg-z').value||14,mv);return;}catch(e){}}const la=+document.getElementById('dg-lat').value,lo=+document.getElementById('dg-lon').value;if(isNaN(la)||isNaN(lo)){notify('KOORDİNAT GİR!');return;}closeDlg('dlg-goto');flyTo(la,lo,+document.getElementById('dg-z').value||14);}
+async function searchPlace(){const q=document.getElementById('gt-q').value.trim();if(!q)return;notify('ARANIYOR...');try{const r=await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=5&accept-language=tr`);const data=await r.json();const el=document.getElementById('s-res');if(!data.length){el.innerHTML='<div class="empty-s"><div class="empty-t">SONUÇ YOK</div></div>';return;}el.innerHTML=data.map(d=>`<div class="sres" onclick="flyTo(${d.lat},${d.lon},14,'${d.display_name.split(',')[0]}');this.parentElement.innerHTML=''"><div class="sr-n">${d.display_name.split(',').slice(0,2).join(', ')}</div><div class="sr-c">${parseFloat(d.lat).toFixed(4)}, ${parseFloat(d.lon).toFixed(4)}</div></div>`).join('');notify(data.length+' SONUÇ');}catch(e){notify('ARAMA HATASI');}}
+
+// ═══════════════════════════════════════
+//  IMPORT / EXPORT
+// ═══════════════════════════════════════
+function dropFile(e){e.preventDefault();document.querySelector('.impz')?.classList.remove('over');const f=e.dataTransfer.files[0];if(f)procFile(f);}
+function impFile(e){const f=e.target.files[0];if(f)procFile(f);}
+function procFile(f){const r=new FileReader();r.onload=ev=>{const ext=f.name.split('.').pop().toLowerCase();if(ext==='gpx')impGPX(ev.target.result,f.name);else if(ext==='kml')impKML(ev.target.result,f.name);else notify('DESTEKLENMEYEN FORMAT');};r.readAsText(f);}
+function impGPX(text,fname){const doc=new DOMParser().parseFromString(text,'application/xml');let n=0;doc.querySelectorAll('wpt').forEach(w=>{const la=+w.getAttribute('lat'),lo=+w.getAttribute('lon'),nm=w.querySelector('name')?.textContent||`WP-${wpCnt}`;if(!isNaN(la)&&!isNaN(lo)){addImpWP(la,lo,nm);n++;}});const pts=[];doc.querySelectorAll('trkpt').forEach(p=>{const la=+p.getAttribute('lat'),lo=+p.getAttribute('lon');if(!isNaN(la)&&!isNaN(lo))pts.push([la,lo]);});if(pts.length>1){L.polyline(pts,{color:'#00a0a0',weight:2.5}).addTo(map);n+=pts.length;}document.getElementById('imp-res').innerHTML=`<div class="sb"><div class="sv">${n}</div><div class="sk">${fname}</div></div>`;notify(`GPX: ${n} NOKTA`);}
+function impKML(text,fname){const doc=new DOMParser().parseFromString(text,'application/xml');let n=0;doc.querySelectorAll('Placemark').forEach(pm=>{const nm=pm.querySelector('name')?.textContent||`KML-${wpCnt}`;const c=pm.querySelector('Point coordinates')?.textContent?.trim();if(c){const[lo,la]=c.split(',').map(Number);if(!isNaN(la)&&!isNaN(lo)){addImpWP(la,lo,nm);n++;}}});document.getElementById('imp-res').innerHTML=`<div class="sb"><div class="sv">${n}</div><div class="sk">${fname}</div></div>`;notify(`KML: ${n} NOKTA`);}
+function addImpWP(la,lo,name){const ll=L.latLng(la,lo);const id=Date.now()+Math.random();const wp={id,name,note:'İçe aktarıldı',color:'#00a0a0',latlng:ll,mgrs:toMGRS(la,lo)};wpItems.push(wp);wpCnt++;const icon=L.divIcon({html:`<div style="width:12px;height:12px;background:#00a0a0;border:2px solid rgba(0,0,0,.6);transform:rotate(45deg)"></div>`,iconSize:[12,12],iconAnchor:[6,6],className:''});const mk=L.marker(ll,{icon,draggable:true,autoPan:true}).addTo(map);mk.bindPopup(wpPop(id,name,wp.note,ll,wp.mgrs));mk.on('dragend',()=>onWPDragEnd(id));wpLayers.push({id,marker:mk});renderWPList();}
+function importCoords(){const t=document.getElementById('cimp').value.trim();if(!t){notify('KOORDİNAT GİR!');return;}let n=0;t.split('\n').forEach(l=>{const p=l.split(',').map(s=>s.trim());if(p.length>=3){const la=+p[1],lo=+p[2];if(!isNaN(la)&&!isNaN(lo)){addImpWP(la,lo,p[0]);n++;}}});notify(`${n} NOKTA İÇE AKTARILDI`);}
+function dlFile(name,c,t){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([c],{type:t}));a.download=name;a.click();}
+
+// ═══════════════════════════════════════
+//  NIGHT MODE
+// ═══════════════════════════════════════
+function toggleNight(){nightMode=!nightMode;document.getElementById('map').classList.toggle('night',nightMode);document.getElementById('sb-night').classList.toggle('night-on',nightMode);document.body.style.filter=nightMode?'sepia(.2) hue-rotate(300deg) brightness(.85)':'';notify(nightMode?'● GECE MODU':'○ NORMAL MOD');}
+
+// ═══════════════════════════════════════
+//  SCALE BAR
+// ═══════════════════════════════════════
+function updateScale(){const z=map.getZoom(),la=map.getCenter().lat,mpp=156543.03392*Math.cos(la*Math.PI/180)/Math.pow(2,z),m=mpp*80,nice=nN(m<1000?m:m/1000)*(m<1000?1:1000),px=Math.min(nice/mpp,120);document.getElementById('scaleln').style.width=px+'px';document.getElementById('scalelbl').textContent=nice<1000?`${Math.round(nice)} m`:`${Math.round(nice/1000)} km`;}
+function nN(n){const p=Math.pow(10,Math.floor(Math.log10(n))),f=n/p;return(f<1.5?1:f<3.5?2:f<7.5?5:10)*p;}
+function fmtD(m){return m<1000?`${Math.round(m)} m`:`${(m/1000).toFixed(3)} km`;}
+
+// ═══════════════════════════════════════
+//  DIALOGS & KEYBOARD
+// ═══════════════════════════════════════
+function openDlg(id){document.getElementById(id).classList.add('on');}
+function closeDlg(id){document.getElementById(id).classList.remove('on');}
+document.querySelectorAll('.do').forEach(d=>d.addEventListener('click',e=>{if(e.target===d)d.classList.remove('on');}));
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){if(mode==='measure')cancelMeasure();else setMode('cursor');document.querySelectorAll('.do.on').forEach(d=>d.classList.remove('on'));closePanel();}
+  if(e.key==='Enter'){if(document.getElementById('dlg-wp').classList.contains('on'))saveWP();else if(document.getElementById('dlg-goto').classList.contains('on'))gotoGo();else if(document.getElementById('dlg-wp-edit').classList.contains('on'))saveWPEdit();else if(document.getElementById('dlg-mil-edit').classList.contains('on'))saveMilEdit();}
+});
+document.getElementById('gt-q').addEventListener('keydown',e=>{if(e.key==='Enter')searchPlace();});
+
+// ═══════════════════════════════════════
+//  SERBEST ÇİZİM
+// ═══════════════════════════════════════
+function startDraw(){setMode('draw');notify('SERBEST ÇİZİM — Parmakla/fareyle çiz');}
+function toolGo(m){setMode(m);closePanel();}
+function toolDraw(){startDraw();closePanel();}
+function toolGoMil(){setMode('military');openMilPanel();}
+function syncToolBtns(m){
+  document.querySelectorAll('.tool-btn').forEach(b=>b.classList.remove('on'));
+  const map_={measure:'tg-msr',bearing:'tg-brg',waypoint:'tg-wp',military:'tg-mil',area:'tg-area',route:'tg-rte',range:'tg-rng',draw:'tg-draw'};
+  if(map_[m])document.getElementById(map_[m])?.classList.add('on');
+}
+function setDrawColor(c,el){drawColor=c;document.querySelectorAll('.dcol').forEach(e=>e.style.borderColor='transparent');if(el)el.style.borderColor='#fff';}
+function undoDraw(){if(drawItems.length){map.removeLayer(drawItems.pop());notify('SON ÇİZİM GERİ ALINDI');}}
+function evtLL(e){const r=map.getContainer().getBoundingClientRect();const x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;const y=(e.touches?e.touches[0].clientY:e.clientY)-r.top;return map.containerPointToLatLng([x,y]);}
+const mapEl=map.getContainer();
+function drawStart(e){if(mode!=='draw')return;e.preventDefault();isDrawing=true;drawPath=[evtLL(e)];}
+function drawMove(e){if(mode!=='draw'||!isDrawing)return;e.preventDefault();drawPath.push(evtLL(e));if(drawTmpLine)map.removeLayer(drawTmpLine);drawTmpLine=L.polyline(drawPath,{color:drawColor,weight:3,opacity:.95,lineCap:'round',lineJoin:'round'}).addTo(map);}
+function drawEnd(e){if(mode!=='draw'||!isDrawing)return;isDrawing=false;if(drawTmpLine){drawItems.push(drawTmpLine);drawTmpLine=null;}drawPath=[];}
+mapEl.addEventListener('mousedown',drawStart);
+mapEl.addEventListener('mousemove',drawMove);
+mapEl.addEventListener('mouseup',drawEnd);
+mapEl.addEventListener('touchstart',drawStart,{passive:false});
+mapEl.addEventListener('touchmove',drawMove,{passive:false});
+mapEl.addEventListener('touchend',drawEnd);
+
+// ═══════════════════════════════════════
+//  NOTIFICATION
+// ═══════════════════════════════════════
+let ntT;
+function notify(msg){const el=document.getElementById('notif');el.textContent=msg;el.classList.add('on');clearTimeout(ntT);ntT=setTimeout(()=>el.classList.remove('on'),2800);}
+
+// ═══════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════
+buildMilPanel();buildAreaTypes();
+
+// Kayıtlı veriyi yükle (harita başladıktan sonra)
+setTimeout(()=>{ loadData(); drawProf(); }, 300);
+
+// Boot animasyonu kapat
+(function(){
+  const boot=document.getElementById('boot');
+  const st=document.getElementById('boot-st');
+  if(!boot)return;
+  const msgs=['HARİTA YÜKLENİYOR...','GPS MODÜLÜ HAZIR','SİSTEM HAZIR'];
+  let i=0;
+  const iv=setInterval(()=>{if(st&&i<msgs.length)st.textContent=msgs[i++];},280);
+  setTimeout(()=>{
+    clearInterval(iv);
+    boot.classList.add('fade');
+    setTimeout(()=>{boot.remove();notify('KOMANDONAV HAZIR ✓');},650);
+  },1100);
+})();
+
+// ── CANLI SAAT ──────────────────────────────────────────────
+(function tick(){
+  const n=new Date();
+  const h=String(n.getHours()).padStart(2,'0');
+  const m=String(n.getMinutes()).padStart(2,'0');
+  const s=String(n.getSeconds()).padStart(2,'0');
+  const el=document.getElementById('tb-clock');
+  if(el) el.textContent=h+':'+m+':'+s;
+  setTimeout(tick,1000);
+})();
+
+// ═══════════════════════════════════════
+//  LOCAL STORAGE — VERİ KALICILIĞI
+// ═══════════════════════════════════════
+
+// Sembol düz lookup tablosu
+const SYM_FLAT={};
+Object.values(MIL_SYMS).flat().forEach(s=>SYM_FLAT[s.id]=s);
+
+function persistData(){
+  try{
+    // Waypoints
+    localStorage.setItem('kn_wp', JSON.stringify(
+      wpItems.map(w=>({id:w.id,name:w.name,note:w.note,color:w.color,
+        lat:w.latlng.lat,lng:w.latlng.lng,mgrs:w.mgrs}))
+    ));
+    // Askeri işaretler
+    localStorage.setItem('kn_mil', JSON.stringify(
+      milItems.map(m=>({id:m.id,symId:m.symId||m.sym?.id,col:m.col,
+        label:m.label||'',note:m.note||'',
+        lat:m.ll?.lat||m.latlng?.lat||0,
+        lng:m.ll?.lng||m.latlng?.lng||0,
+        mgrs:m.mgrs||'',sz:m.sz||44,lw:m.lw||2}))
+    ));
+    // Alanlar
+    localStorage.setItem('kn_areas', JSON.stringify(
+      areaItems.map(a=>({id:a.id,name:a.name,
+        typeId:a.type?.id,typeName:a.type?.name,typeColor:a.type?.color,
+        pts:a.pts,area:a.area,perim:a.perim}))
+    ));
+    // İz
+    localStorage.setItem('kn_trk', JSON.stringify(trkPts));
+    localStorage.setItem('kn_trk_history', JSON.stringify(savedTracks.map(t=>({...t,visible:false}))));
+    localStorage.setItem('kn_cnt', wpCnt);
+  }catch(e){console.warn('KN persist hata:',e);}
+}
+
+function loadData(){
+  try{
+    // Waypoints yükle
+    const wRaw=localStorage.getItem('kn_wp');
+    if(wRaw) JSON.parse(wRaw).forEach(w=>{
+      const ll=L.latLng(w.lat,w.lng);
+      const icon=L.divIcon({html:`<div style="width:14px;height:14px;background:${w.color};border:2px solid rgba(0,0,0,.6);transform:rotate(45deg)"></div>`,iconSize:[14,14],iconAnchor:[7,7],className:''});
+      const mk=L.marker(ll,{icon,draggable:true,autoPan:true}).addTo(map);
+      mk.bindPopup(wpPop(w.id,w.name,w.note,ll,w.mgrs));
+      mk.on('dragend',()=>onWPDragEnd(w.id));
+      wpItems.push({id:w.id,name:w.name,note:w.note,color:w.color,latlng:ll,mgrs:w.mgrs});
+      wpLayers.push({id:w.id,marker:mk});
+    });
+
+    // Askeri işaretler yükle
+    const mRaw=localStorage.getItem('kn_mil');
+    if(mRaw) JSON.parse(mRaw).forEach(m=>{
+      const sym=SYM_FLAT[m.symId]||{id:m.symId,lbl:m.symId};
+      const ll=L.latLng(m.lat,m.lng);
+      const icon=mkMilIcon(sym,m.col,m.sz,m.lw);
+      const mk=L.marker(ll,{icon,draggable:true,autoPan:true}).addTo(map);
+      mk.bindPopup(milPop(m.id,m.label,m.note,ll,m.mgrs),{className:'nato-pop'});
+      mk.on('dragend',()=>onMilDragEnd(m.id));
+      milItems.push({id:m.id,label:m.label,note:m.note,ll,latlng:ll,
+        symId:m.symId,sym,col:m.col,sz:m.sz,lw:m.lw,mgrs:m.mgrs});
+      milLayers.push({id:m.id,marker:mk});
+    });
+
+    // Alanlar yükle
+    const aRaw=localStorage.getItem('kn_areas');
+    if(aRaw) JSON.parse(aRaw).forEach(a=>{
+      const type=AREA_TYPES.find(t=>t.id===a.typeId)||
+        {id:a.typeId,name:a.typeName||a.typeId,color:a.typeColor||'#4a8040',note:''};
+      const poly=L.polygon(a.pts,{color:type.color,fillColor:type.color,fillOpacity:.2,weight:2}).addTo(map);
+      poly.bindPopup(areaPop(a.id,a.name,type,a.area,a.perim));
+      areaItems.push({id:a.id,name:a.name,type,pts:a.pts,area:a.area,perim:a.perim,layer:poly});
+      areaLayers.push({id:a.id,layer:poly});
+    });
+
+    // İz yükle
+    const tRaw=localStorage.getItem('kn_trk');
+    if(tRaw){trkPts=JSON.parse(tRaw);if(trkPts.length>1)updTrkLine();}
+
+    const hRaw=localStorage.getItem('kn_trk_history');
+    if(hRaw){savedTracks=JSON.parse(hRaw);renderTrackHistory();}
+
+    // Sayaç yükle
+    const cnt=localStorage.getItem('kn_cnt');
+    if(cnt)wpCnt=parseInt(cnt)||1;
+
+    renderWPList();renderMilPlaced();renderAreaList();
+  }catch(e){console.warn('KN loadData hata:',e);}
+}
+
+// ── DOCK GPS DURUM SYNC ─────────────────────────────────────
+// GPS aktifken dock butonunu renklendir
+const _origGPSLed = document.getElementById('gps-led');
+const _dockGPS = document.getElementById('dock-gps');
+if(_dockGPS){
+  const observer = new MutationObserver(()=>{
+    const on = _origGPSLed && _origGPSLed.classList.contains('on');
+    _dockGPS.classList.toggle('active', on);
+  });
+  if(_origGPSLed) observer.observe(_origGPSLed, {attributes:true, attributeFilter:['class']});
+}
+</script>
+</body>
+</html>

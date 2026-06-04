@@ -1,0 +1,47 @@
+name: iOS TestFlight
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js kurulum
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Bağımlılıkları yükle
+        run: npm ci
+
+      - name: EAS CLI kur
+        run: npm install -g eas-cli
+
+      - name: iOS build (lokal — EAS kotası yemez)
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: eas build --platform ios --profile production --local --non-interactive --output ./build/app.ipa
+
+      - name: TestFlight'a yükle
+        env:
+          ASC_API_KEY_ID: Y6JXZ6J54S
+          ASC_API_ISSUER_ID: 56bec207-8ef6-4df5-9683-8bb2222b2473
+          ASC_API_KEY_P8: ${{ secrets.ASC_API_KEY_P8 }}
+        run: |
+          echo "$ASC_API_KEY_P8" > AuthKey.p8
+          xcrun altool --upload-app \
+            --type ios \
+            --file ./build/app.ipa \
+            --apiKey "$ASC_API_KEY_ID" \
+            --apiIssuer "$ASC_API_ISSUER_ID" \
+            --private-key @file:AuthKey.p8
+          rm AuthKey.p8
