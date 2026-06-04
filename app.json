@@ -44,6 +44,13 @@
         {
           "locationWhenInUsePermission": "KomandoNav harita üzerinde konumunuzu göstermek için GPS kullanır."
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": { "newArchEnabled": false },
+          "android": { "newArchEnabled": false }
+        }
       ]
     ],
     "extra": {
